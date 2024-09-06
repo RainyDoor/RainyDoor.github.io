@@ -51,7 +51,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2024-08-18 16:59:13'
+  postUpdate: '2024-09-06 08:35:17'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -173,15 +173,247 @@
     document.addEventListener('pjax:send', () => { preloader.initLoading() })
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
-})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/109310857_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/104499170_p0.png')"><nav id="nav"><span id="blog-info"><a href="/" title="RainyDoor"><span class="site-name">RainyDoor</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">RainyDoor</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/e5c21bb6.html" title="JS 学习笔记">JS 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-18T08:53:05.000Z" title="发表于 2024-08-18 16:53:05">2024-08-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-18T08:58:23.619Z" title="更新于 2024-08-18 16:58:23">2024-08-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">JS 学习笔记</a></span></div><div class="content">一、JS 引入方式
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/109310857_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/104499170_p0.png')"><nav id="nav"><span id="blog-info"><a href="/" title="RainyDoor"><span class="site-name">RainyDoor</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">RainyDoor</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3ca78541.html" title="分层解耦">分层解耦</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-06T00:34:55.000Z" title="发表于 2024-09-06 08:34:55">2024-09-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:34:55.416Z" title="更新于 2024-09-06 08:34:55">2024-09-06</time></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2128a2f6.html" title="Web请求响应">Web请求响应</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-05T12:24:29.000Z" title="发表于 2024-09-05 20:24:29">2024-09-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-05T13:59:00.102Z" title="更新于 2024-09-05 21:59:00">2024-09-05</time></span></div><div class="content">一、请求数据
+1. 简单参数
+
+
+原始方式获取请求参数
+
+
+Controller 方法形参中声明 HttpServletRequest 对象
+
+
+调用对象的 getParameter（参数名）
+123456789101112@RestControllerpublic class RequestController &#123;    @RequestMapping(&quot;/simpleParam&quot;)    public String simpleParam(HttpServletRequest request) &#123;        String name = request.getParameter(&quot;name&quot;);        String ageStr = request.getParameter(&quot;age&quot;);        int age = Integer.parseInt(ageStr);        System.out.println(name + &quot;: &quot; + age);      ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/af3eed3c.html" title="HTTP协议">HTTP协议</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-04T12:19:24.000Z" title="发表于 2024-09-04 20:19:24">2024-09-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-05T08:41:33.951Z" title="更新于 2024-09-05 16:41:33">2024-09-05</time></span></div><div class="content">一、HTTP 概述
+
+概念：Hyper Text Transfer Protocol，超文本传输协议，规定了浏览器和服务器之间数据传输的规则。
+特点：
+
+基于 TCP 协议：面向连接，安全
+基于请求-响应模型：一次请求对应一次响应
+HTTP 协议是无状态的协议，对于事物处理没有记忆能力。每次请求-响应都是独立的。
+
+缺点：多次请求间不能共享数据
+优点：速度快
+
+
+
+
+
+二、请求协议
+
+
+请求行：请求数据第一行（请求方式、资源路径、协议）
+
+
+请求头：第二行开始，格式 key: value
+
+
+
+key
+说明
+
+
+
+
+Host
+请求的主机名
+
+
+User-Agent
+浏览器版本
+
+
+Accept
+表示浏览器能接受的资源类型
+
+
+Accept-Language
+表示浏览器偏好的语言，服务器可以据此返回不同语言的网页
+
+
+Accept-Encoding
+表示浏览器可以支持的压缩类型，例如 gzip， deflate 等
+
+
+Content-Type
+请求主体的数据类型
+
+
+Content-Length
+请求主体的大小（单位：字节）
+
+
+
+
+
+请求体：POST 请求，存放请求参数
+
+请求方式- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/6341f0d8.html" title="Maven学习">Maven学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-26T06:35:29.000Z" title="发表于 2024-08-26 14:35:29">2024-08-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-28T13:46:10.472Z" title="更新于 2024-08-28 21:46:10">2024-08-28</time></span></div><div class="content">一、Maven 概述
+
+
+Apache Maven 是一个项目管理和构建工具，它基于项目对象模型（POM）的概念，通过一小段描述信息来管理项目的构建。
+
+
+作用：
+
+依赖管理：方便快捷的管理项目依赖的资源（jar 包），避免版本冲突问题。
+统一项目结构：提供标准、统一的项目结构。
+项目构建：标准跨平台（Linux, Windows, MacOS）的自动化项目构建方式。
+
+
+
+官网
+
+
+仓库：用于存储资源，管理各种 jar 包。
+
+本地仓库：自己计算机上的一个目录。
+中央仓库：由 Maven 团队维护的全球唯一的。仓库地址
+远程仓库（私服）：一般由公司团队搭建的私有仓库。
+
+
+
+安装
+
+
+安装步骤：
+
+
+解压 apache-maven-bin.zip
+
+
+配置本地仓库：修改 conf/settings.xml 中的 &lt;localRepository&gt; 为一个指定目录。
+1&lt;localRepository&gt;E:\develop\apache-maven\mvn_repo&lt;/localRepository&gt;
+
+
+配置阿里云私服：修改 conf/settin ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/7db00131.html" title="前端工程化">前端工程化</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-19T14:11:17.000Z" title="发表于 2024-08-19 22:11:17">2024-08-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-26T06:33:52.543Z" title="更新于 2024-08-26 14:33:52">2024-08-26</time></span></div><div class="content">一、YApi
+
+介绍：YApi 是高效、易用、功能强大的 api 管理平台，旨在为开发、产品、测试人员提供更优雅的接口管理服务。
+地址
+
+二、环境准备
+Vue-cli
+
+介绍：Vue-cli 是 Vue 官方提供的一个脚手架，用于快速生成一个 Vue 的项目模板。
+Vue-cli 提供了如下功能：
+
+统一的目录结构
+本地调试
+热部署
+单元测试
+集成打包上线
+
+
+依赖环境：NodeJS
+
+三、Vue 项目
+1. 创建
+
+
+命令行
+1vue create vue-project01
+
+
+图形化界面
+1vue ui
+
+
+2. 目录结构
+
+基于 Vue 脚手架创建出来的工程，有标准的目录结构，如下：
+
+
+3. 配置端口
+
+在 vue.config.js 中修改为以下代码：
+
+12345678const &#123; defineConfig &#125; = require(&#x27;@vue/cli-service&#x27;)module.exports = defineConfig(&#123;  transpileDependencies: true,  devServer: &#1 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info"><a class="article-title" href="/undefined.html" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-19T13:38:46.368Z" title="发表于 2024-08-19 21:38:46">2024-08-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-19T13:38:46.368Z" title="更新于 2024-08-19 21:38:46">2024-08-19</time></span></div><div class="content">{"dependencies":{"axios":"^1.7.4"}}</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3881aba5.html" title="Ajax 学习笔记">Ajax 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-19T13:18:43.000Z" title="发表于 2024-08-19 21:18:43">2024-08-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-19T14:01:00.961Z" title="更新于 2024-08-19 22:01:00">2024-08-19</time></span></div><div class="content">一、Ajax 概述
+
+概念：Asynchronous JavaScript And XML，异步的 JavaScript 和 XML。
+作用：
+
+数据交换：通过 Ajax 可以给服务器发送请求，并获取服务器响应的数据。
+异步交互：可以在不重新加载整个页面的情况下，与服务器交换数据并更新部分网页的技术，如：搜索联想、用户名是否可用的校验等等。
+
+
+
+二、Axios
+
+介绍：Axios 对原生的 Ajax 进行了封装，简化书写，快速开发。
+官网
+
+- Axios 入门
+
+
+引入 Axios 的 js 文件
+1&lt;script src=&quot;js/axios.js&quot;&gt;&lt;/script&gt;
+
+
+使用 Axios 发送请求，并获取响应结果
+123456axios(&#123;    method: &quot;get&quot;,    url: &quot;&quot;&#125;).then((result) =&gt; &#123;    console.log(result.data)&#125;)
+1234567axios(&#123;    met ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/8e599fca.html" title="Vue 学习笔记">Vue 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-19T08:42:14.000Z" title="发表于 2024-08-19 16:42:14">2024-08-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-19T13:17:51.352Z" title="更新于 2024-08-19 21:17:51">2024-08-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">JS 学习笔记</a></span></div><div class="content">一、Vue 概述
+
+Vue 是一套前端框架，免除原生 JavaScript 中的 DOM 操作，简化书写。
+基于 MVVM（Model-View-ViewModel）思想，实现数据的双向绑定，将编程的 关注点放在数据上。
+官网网址
+框架：是一个半成品软件，是一套可重用的、通用的、软件基础代码模型。基于框架进行开发，更加快捷、高效。
+
+
+
+本笔记主要学习当前企业主流使用的 Vue 2。
+
+二、快速入门
+
+
+引入 Vue.js 文件
+1&lt;script src=&quot;js/vue.js&quot;&gt;&lt;/script&gt;
+
+
+在 JS 代码区域，创建 Vue 核心对象，定义数据模型
+123456new Vue(&#123;    el: &quot;#app&quot;,    data: &#123;        message: &quot;hello Vue!&quot;    &#125;&#125;)
+
+
+编写视图
+1234&lt;div id=&quot;app&quot;&gt;    &lt;input type=&quot;text&quot;  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/e5c21bb6.html" title="JS 学习笔记">JS 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-18T08:53:05.000Z" title="发表于 2024-08-18 16:53:05">2024-08-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-19T08:40:28.186Z" title="更新于 2024-08-19 16:40:28">2024-08-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">JS 学习笔记</a></span></div><div class="content">一、JS 引入方式
+
 
 内部脚本：将 JS 代码定义在 HTML 页面中
 
-JavaScript 代码必须位于  标签之中
+
+JavaScript 代码必须位于 &lt;script&gt;&lt;/script&gt; 标签之间
+
+
+在 HTML 文档中，可以在任意地方，放置任意数量的 &lt;script&gt;
+
+
+一般会把脚本置于 &lt;body&gt; 元素的底部，可改善显示速度
+123&lt;script&gt;	alert(&quot;hello js!&quot;)&lt;/script&gt;
 
 
 
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/a151d12d.html" title="java 注解">java 注解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-17T04:16:55.000Z" title="发表于 2024-08-17 12:16:55">2024-08-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.245Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、注解概述
+
+外部脚本：将 JS 代码定义在外部 JS 文件中，然后引入到 HTML 页面中
+
+
+外部 JS 文件中，只包含 JS 代码，不包含 &lt;script&gt; 标签
+
+
+&lt;script&gt; 标签不能自闭和
+1&lt;script src=&quot;js/demo.js&quot;&gt;&lt;/script&gt;
+
+
+
+
+二、基础语法
+1. 书写语法
+
+区分大小写：与 Java 一样，变量名、函数名以及其他一切东西都是区分大小写的
+每行结尾的分号可有可无
+注释：
+
+单行注释：//注释内容
+多行注释 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/a151d12d.html" title="java 注解">java 注解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-17T04:16:55.000Z" title="发表于 2024-08-17 12:16:55">2024-08-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.245Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、注解概述
 
 Java 代码里的特殊标记，比如：@Override、@Test 等，作用是：让其他程序根据注解信息来决定怎么执行该程序。
 注意：注解可以用在类上、构造器上、方法上、成员变量上、参数上等位置处。
@@ -220,222 +452,14 @@ Java 代码里的特殊标记，比如：@Override、@Test 等，作用是：让
     
     	
         	
-     ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/34b48c38.html" title="IDEA使用Junit时报错java.lang.reflect.InaccessibleObjectException的解决办法">IDEA使用Junit时报错java.lang.reflect.InaccessibleObjectException的解决办法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-16T13:06:51.000Z" title="发表于 2024-08-16 21:06:51">2024-08-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.238Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">问题解决</a></span></div><div class="content">遇到的错误 java.lang.reflect.InaccessibleObjectException 表明在运行单元测试时，IDEA 的 Junit 模块尝试访问一个模块系统中未公开导出的类。从 Java 9 开始，引入了模块化系统（Project Jigsaw），它要求模块之间明确指定哪些包是可见的。如果一个模块尝试访问另一个模块中未被明确导出的包，就会抛出这个异常。
-可以通过在 module-info.java 文件中添加以下一行来解决问题：
-1exports 要使用的类的全类名 to junit;
-这里的 junit 是运行测试的模块的名称。
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/8717feda.html" title="Junit 单元测试">Junit 单元测试</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-16T12:14:54.000Z" title="发表于 2024-08-16 20:14:54">2024-08-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.244Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、单元测试概述
-
-单元测试：针对最小的功能单元（方法），编写测试代码对其进行正确性测试。
-以前的方法：
-
-只能在 main 方法编写测试代码，去调用其他方法进行测试
-无法实现自动化测试，一个方法测试失败，可能影响其他方法的测试
-无法得到测试的报告，需要程序员自己去观察测试是否成功
-
-
-Junit 单元测试框架
-
-可以用来对方法进行测试，它是由第三方公司开源出来的（很多开发工具已经集成了 Junit 框架，比如 IDEA）
-可以灵活的编写测试代码，可以针对某个方法执行测试，也支持一键完成对全部方法的自动化测试，且各自独立
-不需要程序员去分析测试的结果，会自动生成测试报告出来
-
-
-
-二、Junit 快速入门
-
-具体步骤
-
-将 Junit 框架的 jar 包导入到项目中（IDEA 集成了 Junit 框架，不需要自己手工导入）
-为需要测试的业务类，定义对应的测试类，并未每个业务方法，编写对应的测试方法（必须：公共、无参、无返回值）
-测试方法上必须声明 @Test 注解，然后在测试方法中，编写代码调用被测试的业务方法进行测试
-开始测试：选中测试方法，右键运行。
-
-
-
-123456789101 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3eaf3d63.html" title="java 动态代理">java 动态代理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-15T14:25:30.000Z" title="发表于 2024-08-15 22:25:30">2024-08-15</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.246Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、动态代理概述
-
-
-为什么需要动态代理
-
-代理可以无侵入式的给对象增强其他的功能。调用者→代理→对象调用者\rightarrow 代理 \rightarrow 对象
-调用者→代理→对象
-
-
-
-
-代理长什么样子
-
-代理里面就是对象要被代理的方法
-
-
-
-Java 通过什么来保证代理的样子
-
-通过接口保证。后面的对象和代理需要实现同一个接口。接口中就是被代理的所有方法。
-
-
-
-二、动态代理实现
-
-
-java.lang.reflect.Proxy 类：提供了为对象产生代理对象的方法：
-1public static Object newProxyInstance(ClassLoader loader, Class&lt;?&gt;[] interfaces, InvocationHandler h);
-
-参数一：用于指定哪个类加载器，去加载生成的代理类；
-参数二：指定接口，这些接口用于指定生成的代理长什么样，也就是有哪些方法；
-参数三：用来指定生成的代理对象要干什么事。
-
-
-
-案例：代理明星
-123456789101112131415161718192021222324252627282930 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/7ca90ba6.html" title="java 反射">java 反射</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-14T13:54:05.000Z" title="发表于 2024-08-14 21:54:05">2024-08-14</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.248Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、反射概述
-
-反射允许对成员变量、成员方法和构造方法的信息进行编程访问。
-
-二、获取 class 对象的三种方式
-
-Class.forName(“全类名”)
-类名.class
-对象.getClass();
-
-12345678910111213141516public class Test &#123;    public static void main(String[] args) throws ClassNotFoundException &#123;        //1.第一种方式        //全类名：包名 + 类名        //最为常用        Class&lt;?&gt; aClass = Class.forName(&quot;com.RainyDoor.ReflectDemo1.Student&quot;);        //2.第二种方式        //一般更多的是当作参数进行使用        Class&lt;Student&gt; studentClass = Student.class;        //3.第三种方式        ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/1a94f78a.html" title="网络编程学习笔记">网络编程学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-06T12:41:01.000Z" title="发表于 2024-08-06 20:41:01">2024-08-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.249Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、网络编程概述
-
-
-网络编程：在网络通信协议下，不同计算机上运行的程序，进行的数据传输。
-
-
-不管是什么场景，都是计算机跟计算机之间通过网络进行数据传输。
-
-
-Java 中可以使用 java.net 包下的技术轻松开发出常见的网络应用程序。
-
-
-常见的软件架构
-
-
-C/S：Client/Server 客户端/服务器
-在用户本地需要下载并安装客户端程序，在远程有一个服务器端程序。
-
-
-B/S：Browser/Server 浏览器/服务器
-只需要一个浏览器，用户通过不同的网址访问不同的服务器。
-
-
-
-
-两种软件架构的区别：
-
-CS：适合定制专业化的办公类软件，如：IDEA、网游；
-BS：适合移动互联网应用，可以在任何地方随时访问的系统。
-
-
-
-二、网络编程三要素
-1. IP
-
-
-全称：Internet Protocol，是互联网协议地址，也称 IP 地址。是分配给上网设备的数字标签，是唯一的标识。
-
-
-IPv4：目前的主流方案，最多只有 2322^{32}232 个 IP，目前已经用完了。
-
-
-IPv6：为了解决 IPv4 不够用而出现的，最多有 21282^{128}2128 个 IP ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/19117c9f.html" title="Blender 学习笔记">Blender 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-05T11:26:22.000Z" title="发表于 2024-08-05 19:26:22">2024-08-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.244Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Blender-%E5%AD%A6%E4%B9%A0/">Blender 学习</a></span></div><div class="content">一、基础篇
-
-常用快捷键
-
-视角的控制
-
-旋转视角：鼠标中键按住可旋转
-平移视角：Shift + 鼠标中键
-推进退远视角：滚动鼠标中键
-
-
-物体的控制
-
-移动物体：G
-旋转物体：R
-缩放物体：S
-恢复变换：Alt+G，Alt+R，Alt+S
-新建物体：Shift+A
-复制物体：Shift+D
-删除物体：X/Delete
-隐藏物体：H
-显示隐藏物体：Alt+H
-隐藏没有被选中的物体：Shift+H
-选择物体
-
-刷选：C
-全选：A
-按住 Shift 可以加选或者减选
-
-
-
-
-视图的切换（小键盘）
-
-顶视图：7；底视图：ctrl+7
-前视图：1；后视图：ctrl+1
-右视图：3；左视图：ctrl+3
-反转当前视图：9
-切换摄像机的视角：0
-切换透视投影和正交投影：5
-前后左右角度微调：2，4，6，8
-缩放微调：+，-
-
-
-其他
-
-调用游标 Pie 目录：Shift+S
-游标恢复到世界中心：Shift+C
-移动游标：游标工具或者 Shift+右键
-最大化窗口：Ctrl+空格
-G 移动状态下，按住 Ctrl，可以以每个方格增量为单位进行吸附
-切换全局和局部坐标系：在 G 移动状态下按两次 X，Y ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/71959014.html" title="操作系统学习笔记">操作系统学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-01T13:40:34.000Z" title="发表于 2024-08-01 21:40:34">2024-08-01</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.247Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/">操作系统</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/712a89d6.html" title="Java 多线程学习笔记">Java 多线程学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-30T11:18:17.000Z" title="发表于 2024-07-30 19:18:17">2024-07-30</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.243Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、多线程概述
-
-
-线程：线程是操作系统能够进行运算调度的最小单位。它被包含在进程之中，是进程中的实际运作单位。
-
-
-进程：进程是程序的基本执行实体。
-
-
-什么是多线程？
-有了多线程，我们就可以让程序同时做多件事情。
-
-
-多线程的作用？
-提高效率。
-
-
-多线程的应用场景：
-只要你想让多个事情同时运行就需要用到多线程
-比如：软件中的耗时操作、所有的聊天软件、所有的服务器。
-
-
-二、并发和并行
-
-并发：在同一时刻，有多个指令在单个 CPU 上交替运行。
-并行：在同一时刻，有多个指令在单个 CPU 上同时执行。
-
-三、多线程的实现方式
-
-
-继承 Thread 类的方式进行实现
-
-自己定义一个类继承 Thread；
-重写 run 方法；
-创建子类的对象，并启动线程。
-
-1234567891011121314151617181920public class MyThread extends Thread&#123;    @Override    public void run() &#123;        for (int i = 0; i &lt; 100; i++) &#123;     ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/109310857_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RainyDoor</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">17</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">20</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/e5c21bb6.html" title="JS 学习笔记">JS 学习笔记</a><time datetime="2024-08-18T08:53:05.000Z" title="发表于 2024-08-18 16:53:05">2024-08-18</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/a151d12d.html" title="java 注解">java 注解</a><time datetime="2024-08-17T04:16:55.000Z" title="发表于 2024-08-17 12:16:55">2024-08-17</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/34b48c38.html" title="IDEA使用Junit时报错java.lang.reflect.InaccessibleObjectException的解决办法">IDEA使用Junit时报错java.lang.reflect.InaccessibleObjectException的解决办法</a><time datetime="2024-08-16T13:06:51.000Z" title="发表于 2024-08-16 21:06:51">2024-08-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/8717feda.html" title="Junit 单元测试">Junit 单元测试</a><time datetime="2024-08-16T12:14:54.000Z" title="发表于 2024-08-16 20:14:54">2024-08-16</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3eaf3d63.html" title="java 动态代理">java 动态代理</a><time datetime="2024-08-15T14:25:30.000Z" title="发表于 2024-08-15 22:25:30">2024-08-15</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+     ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><a class="page-number" href="/page/3/#content-inner">3</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/109310857_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RainyDoor</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3ca78541.html" title="分层解耦">分层解耦</a><time datetime="2024-09-06T00:34:55.000Z" title="发表于 2024-09-06 08:34:55">2024-09-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2128a2f6.html" title="Web请求响应">Web请求响应</a><time datetime="2024-09-05T12:24:29.000Z" title="发表于 2024-09-05 20:24:29">2024-09-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/af3eed3c.html" title="HTTP协议">HTTP协议</a><time datetime="2024-09-04T12:19:24.000Z" title="发表于 2024-09-04 20:19:24">2024-09-04</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/6341f0d8.html" title="Maven学习">Maven学习</a><time datetime="2024-08-26T06:35:29.000Z" title="发表于 2024-08-26 14:35:29">2024-08-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/7db00131.html" title="前端工程化">前端工程化</a><time datetime="2024-08-19T14:11:17.000Z" title="发表于 2024-08-19 22:11:17">2024-08-19</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Blender-%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">Blender 学习</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">JS 学习笔记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">java 学习笔记</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><span class="card-category-list-name">操作系统</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"><span class="card-category-list-name">概率论与数理统计</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"><span class="card-category-list-name">计算机网络原理</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"><span class="card-category-list-name">问题解决</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 1.1em; color: #999">字符串</a> <a href="/tags/%E5%86%85%E5%AD%98/" style="font-size: 1.3em; color: #99a1ac">内存</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1.1em; color: #999">数学</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a> <a href="/tags/%E5%BB%BA%E6%A8%A1/" style="font-size: 1.1em; color: #999">建模</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/JS/" style="font-size: 1.1em; color: #999">JS</a> <a href="/tags/Junit/" style="font-size: 1.3em; color: #99a1ac">Junit</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.1em; color: #999">多线程</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.1em; color: #999">框架</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/%E6%8A%A5%E9%94%99/" style="font-size: 1.1em; color: #999">报错</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/Blender/" style="font-size: 1.1em; color: #999">Blender</a> <a href="/tags/%E6%B3%9B%E5%9E%8B/" style="font-size: 1.1em; color: #999">泛型</a> <a href="/tags/OS/" style="font-size: 1.1em; color: #999">OS</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 1.1em; color: #999">反射</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">单元测试</a> <a href="/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" style="font-size: 1.1em; color: #999">动态代理</a> <a href="/tags/IO/" style="font-size: 1.1em; color: #999">IO</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/08/"><span class="card-archive-list-date">八月 2024</span><span class="card-archive-list-count">9</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">17</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">62.3k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-08-18T08:59:13.278Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: lightgray"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By RainyDoor</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Blender-%E5%AD%A6%E4%B9%A0/"><span class="card-category-list-name">Blender 学习</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">JS 学习笔记</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">java 学习笔记</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"><span class="card-category-list-name">操作系统</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%A6%82%E7%8E%87%E8%AE%BA%E4%B8%8E%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/"><span class="card-category-list-name">概率论与数理统计</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"><span class="card-category-list-name">计算机网络原理</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"><span class="card-category-list-name">问题解决</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 1.1em; color: #999">反射</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.1em; color: #999">框架</a> <a href="/tags/%E6%95%B0%E5%AD%A6/" style="font-size: 1.1em; color: #999">数学</a> <a href="/tags/Junit/" style="font-size: 1.3em; color: #99a1ac">Junit</a> <a href="/tags/Vue/" style="font-size: 1.1em; color: #999">Vue</a> <a href="/tags/http/" style="font-size: 1.1em; color: #999">http</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 1.1em; color: #999">字符串</a> <a href="/tags/%E5%BB%BA%E6%A8%A1/" style="font-size: 1.1em; color: #999">建模</a> <a href="/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" style="font-size: 1.1em; color: #999">动态代理</a> <a href="/tags/Blender/" style="font-size: 1.1em; color: #999">Blender</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.1em; color: #999">多线程</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91/" style="font-size: 1.1em; color: #999">前端开发</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">单元测试</a> <a href="/tags/maven/" style="font-size: 1.1em; color: #999">maven</a> <a href="/tags/SpringBoot/" style="font-size: 1.1em; color: #999">SpringBoot</a> <a href="/tags/IO/" style="font-size: 1.1em; color: #999">IO</a> <a href="/tags/Ajax/" style="font-size: 1.1em; color: #999">Ajax</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/JS/" style="font-size: 1.3em; color: #99a1ac">JS</a> <a href="/tags/%E6%8A%A5%E9%94%99/" style="font-size: 1.1em; color: #999">报错</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/%E6%B3%9B%E5%9E%8B/" style="font-size: 1.1em; color: #999">泛型</a> <a href="/tags/OS/" style="font-size: 1.1em; color: #999">OS</a> <a href="/tags/%E5%86%85%E5%AD%98/" style="font-size: 1.3em; color: #99a1ac">内存</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">九月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/08/"><span class="card-archive-list-date">八月 2024</span><span class="card-archive-list-count">14</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/07/"><span class="card-archive-list-date">七月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/04/"><span class="card-archive-list-date">四月 2024</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/03/"><span class="card-archive-list-date">三月 2024</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">25</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">75.3k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-09-06T00:35:16.695Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: lightgray"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By RainyDoor</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
