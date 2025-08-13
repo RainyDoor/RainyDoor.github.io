@@ -51,7 +51,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-05-05 21:33:08'
+  postUpdate: '2025-08-13 21:04:53'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -152,7 +152,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
   const $loadingBox = document.getElementById('loading-box')
   const $body = document.body
   const preloader = {
@@ -173,123 +173,122 @@
     document.addEventListener('pjax:send', () => { preloader.initLoading() })
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
-})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/109310857_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">40</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/104499170_p0.png')"><nav id="nav"><span id="blog-info"><a href="/" title="RainyDoor"><span class="site-name">RainyDoor</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">RainyDoor</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3b2912fc.html" title="微服务保护">微服务保护</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-05T12:12:55.000Z" title="发表于 2025-05-05 20:12:55">2025-05-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T13:32:54.454Z" title="更新于 2025-05-05 21:32:54">2025-05-05</time></span></div><div class="content">一、微服务可能存在的问题
-1.1 业务健壮性
-​	假设在查询购物车列表业务中，购物车服务需要查询最新的商品信息，与购物车数据做对比，提醒用户。如果商品服务查询时发生故障，查询购物车列表在调用商品服务时也会发生异常，从而导致购物车查询失败。但从业务角度来说，为了提升用户体验，即便是商品查询失败，购物车列表也应该正确展示出来，哪怕不包含最新的商品信息。
-1.2 雪崩问题
-​	假设 A 服务业务并发较高，占用过多 Tomcat 连接，可能会导致该服务的所有接口响应时间增加，延迟变高，甚至是长时间阻塞直至查询失败。
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/109310857_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/104499170_p0.png')"><nav id="nav"><span id="blog-info"><a href="/" title="RainyDoor"><span class="site-name">RainyDoor</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">RainyDoor</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/6978c432.html" title="多层次记忆架构">多层次记忆架构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-08-13T12:01:07.000Z" title="发表于 2025-08-13 20:01:07">2025-08-13</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-13T12:56:12.796Z" title="更新于 2025-08-13 20:56:12">2025-08-13</time></span></div><div class="content">目前痛点记忆多&#x3D;聪明，但是记忆多会触发 token 上线。因为无论用什么存储对话，也只能保证服务端的存储性能。一旦聊天记录多了依然会超过 token 上线，但是有时候我们依然希望存储更多的聊天记录，这样才能保证整个对话更像“人”。
+多层次记忆架构（模仿人类）1. 近期记忆保留在上下文窗口中的最近几轮对话，每轮对话完成后立即存储（例如通过 ChatMemory 保留最近的 10 轮对话）
+2.中期记忆通过 RAG 检索的相关历史对话（每轮对话完成后，异步将对话内容转换为向量并存入向量数据库） 
+3. 长期记忆关键信息的固话总结
+
+方式一：定时批处理
+通过定时任务（如每天或每周）对积累的对话进行总结和提炼
+提取关键信息、用户偏好、重要事实等
+批处理方式降低计算成本，适合大规模处理
+
+
+方式二：关键点实时处理
+在对话中识别出关键信息点时立即提取并存储
+例如，当用户明确表达偏好、提供个人信息或设置持久性指令时
+采用“写入触发器”机制，在特定条件下自动更新长期记忆
+
+
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3a3d3bf.html" title="使用Seata解决常见的分布式事务问题">使用Seata解决常见的分布式事务问题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-20T13:29:39.000Z" title="发表于 2025-05-20 21:29:39">2025-05-20</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-08-13T12:56:12.798Z" title="更新于 2025-08-13 20:56:12">2025-08-13</time></span></div><div class="content">一、认识 Seata
+分布式事务问题产生的重要原因之一是因为参与事务的多个分支事务之间互相无感知，不知道彼此的执行状态。因此解决分布式事务的思想非常简单：
+
+找一个统一的事务协调者，与多个分支事务通信，检测每个分支事务的执行状态，保证全局事务下的每一个分支事务同时成功或失败即可。大多数的分布式事务框架都是基于这个理论来实现的。
+
+
+在 Seata 的事务管理中有三个重要的角色：
+
+TC（Transaction Coordinator）事务协调者：维护全局和分支事务的状态，协调全局事务提交或回滚。
+TM（Transaction Manager）事务管理器：定义全局事务的范围、开始全局事务、提交或回滚全局事务。
+RM（Resource Manager）资源管理器：管理分支事务，与 TC 交谈以注册分支事务和报告分支事务的状态，并驱动分支事务提交或回滚。
+
+
+Seata 的工作架构如图所示：
+
+其中，TM 和 RM 可以理解为 Seata 的客户端部分，引入到参与事务的微服务依赖中即可。将来 TM 和 RM 就会协助微服务，实现本地分支事务与 TC 之间交互，实现事务的提交或回滚。
+而 TC ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3b2912fc.html" title="微服务保护">微服务保护</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-05-05T12:12:55.000Z" title="发表于 2025-05-05 20:12:55">2025-05-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T13:32:54.454Z" title="更新于 2025-05-05 21:32:54">2025-05-05</time></span></div><div class="content">一、微服务可能存在的问题1.1 业务健壮性​	假设在查询购物车列表业务中，购物车服务需要查询最新的商品信息，与购物车数据做对比，提醒用户。如果商品服务查询时发生故障，查询购物车列表在调用商品服务时也会发生异常，从而导致购物车查询失败。但从业务角度来说，为了提升用户体验，即便是商品查询失败，购物车列表也应该正确展示出来，哪怕不包含最新的商品信息。
+1.2 雪崩问题​	假设 A 服务业务并发较高，占用过多 Tomcat 连接，可能会导致该服务的所有接口响应时间增加，延迟变高，甚至是长时间阻塞直至查询失败。
 ​	而这也会导致调用该服务的 B 服务业务的响应时间也变长，甚至也阻塞直至无法访问。如果此时 B 服务的请求较多，可能会导致 B 服务的 Tomcat 连接占用较多，所有接口的响应时间都会增加，整个服务性能很差，甚至不可用。
 ​	以此类推，整个微服务群中与 A 服务、B 服务等所有有调用关系的服务可能都会出现问题，最终导致整个集群不可用。
 ​	这就是级联失败问题，或者叫雪崩问题。
-二、服务保护方案
-2.1 请求限流
-​	服务故障最重要原因，就是并发太高！解决了这个问题，就能避免大部 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/d7c50f3c.html" title="OpenFeign的使用">OpenFeign的使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-24T14:01:18.000Z" title="发表于 2025-04-24 22:01:18">2025-04-24</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T12:30:09.462Z" title="更新于 2025-05-05 20:30:09">2025-05-05</time></span></div><div class="content">一、简介
-OpenFeign 客户端是一个 web 声明式 http 远程调用工具，直接可以根据服务名称去注册中心拿到指定的服务 IP 集合，提供了接口和注解方式进行调用，内嵌集成了 Ribbon 本地负载均衡器。
+二、服务保护方案2.1 请求限流​	服务故障最重要原因，就是并发太高！解决了这个问题，就能避免大部分故障。当 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/d7c50f3c.html" title="OpenFeign的使用">OpenFeign的使用</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-24T14:01:18.000Z" title="发表于 2025-04-24 22:01:18">2025-04-24</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T12:30:09.462Z" title="更新于 2025-05-05 20:30:09">2025-05-05</time></span></div><div class="content">一、简介OpenFeign 客户端是一个 web 声明式 http 远程调用工具，直接可以根据服务名称去注册中心拿到指定的服务 IP 集合，提供了接口和注解方式进行调用，内嵌集成了 Ribbon 本地负载均衡器。
 二、SpringCloud 集成 OpenFeign
-
-
 引入 starter
-12345678910&lt;!-- OpenFeign--&gt;&lt;dependency&gt;    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;    &lt;artifactId&gt;spring-cloud-starter-openfeign&lt;/artifactId&gt;&lt;/dependency&gt;&lt;!-- 负载均衡--&gt;&lt;dependency&gt;    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;    &lt;artifactId&gt;spring-cloud-starter-loadbalance ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/c1baee3f.html" title="初识JVM">初识JVM</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-22T09:11:18.000Z" title="发表于 2025-04-22 17:11:18">2025-04-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T12:30:09.468Z" title="更新于 2025-05-05 20:30:09">2025-05-05</time></span></div><div class="content">1. 什么是 JVM？
-1）定义
-Java Virtual Machine，Java 程序的运行环境（Java 二进制字节码的运行环境）。
+12345678910&lt;!-- OpenFeign--&gt;&lt;dependency&gt;    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;    &lt;artifactId&gt;spring-cloud-starter-openfeign&lt;/artifactId&gt;&lt;/dependency&gt;&lt;!-- 负载均衡--&gt;&lt;dependency&gt;    &lt;groupId&gt;org.springframework.cloud&lt;/groupId&gt;    &lt;artifactId&gt;spring-cloud-starter-loadbalancer&l ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/c1baee3f.html" title="初识JVM">初识JVM</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-22T09:11:18.000Z" title="发表于 2025-04-22 17:11:18">2025-04-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T12:30:09.468Z" title="更新于 2025-05-05 20:30:09">2025-05-05</time></span></div><div class="content">1. 什么是 JVM？1）定义Java Virtual Machine，Java 程序的运行环境（Java 二进制字节码的运行环境）。
 2）好处
-
 一次编写，到处运行
 自动内存管理，垃圾回收机制
 数组下标越界检查（防止数组越界元素覆盖其他代码内存）
 多态（使用虚方法表）
 
 3）比较 JVM、JRE、JDK
-
 2. 学习 JVM 有什么用？
-
 面试必备
 中高级程序员必备
 想走的长远，就需要懂得原理，比如：自动拆装箱怎么实现，反射怎么实现，垃圾回收机制是怎么回事等等，JVM 是必须掌握的。
 
 3. 常见的 JVM
-
 后期主要学习的是 HotSpot 版本的虚拟机。
 4. 学习路线
-
 
 ClassLoader：Java 代码编译成二进制字节码后，会经过类加载器，这样才能加载到 JVM 中运行。
 Method Area：类是放在方法区中的。
 Heap：类的实例对象。
 当类调用方法时，会用到 JVM Stack、PC Register、本地方法栈。
-方法执行时的每行代码是有执行引擎中的解释器逐行执行，方法中的热点代码频繁调用的方法，由 JIT 编译器优化后执行，GC 会对堆中不用的对象进行回 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/e614237b.html" title="JVM内存结构">JVM内存结构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-22T09:05:22.000Z" title="发表于 2025-04-22 17:05:22">2025-04-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T12:30:09.461Z" title="更新于 2025-05-05 20:30:09">2025-05-05</time></span></div><div class="content">1、程序计数器
-1）定义
-Program Counter Register 程序计数器（寄存器）：记录下一条 jvm 指令的执行地址。
+方法执行时的每行代码是有执行引擎中的解释器逐行执行，方法中的热点代码频繁调用的方法，由 JIT 编译器优化后执行，GC 会对堆中不用的对象进行回收。需要和操作 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/e614237b.html" title="JVM内存结构">JVM内存结构</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-22T09:05:22.000Z" title="发表于 2025-04-22 17:05:22">2025-04-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-06-16T10:55:33.954Z" title="更新于 2025-06-16 18:55:33">2025-06-16</time></span></div><div class="content">1、程序计数器1）定义Program Counter Register 程序计数器（寄存器）：记录下一条 jvm 指令的执行地址。
 
 特点：
-
 是线程私有的
 不会存在内存溢出
 
 
 
 2）作用
-
 解释器会解释指令为机器码交给 cpu 执行，程序计数器会记录下一条指令的地址，这样下一次解释器就会从程序计数器拿到指令并进行解释执行。
 多线程环境下，如果两个线程发生了上下文切换，那么程序计数器会保存线程下一行指令的地址，以便于切换回来后接着往下执行。
 
-2、虚拟机栈 JVM Stacks
-1）定义
-
+2、虚拟机栈 JVM Stacks1）定义
 每个线程运行时所需要的内存，称为虚拟机栈。
 每个栈由多个栈帧（Frame）组成，对应着每次方法调用时所占用的内存。
 每个线程只能由一个活动栈帧，对应着当前正在执行的那个方法。
 
 问题辨析：
 
-
 垃圾回收是否涉及栈内存？
 不会。栈内存是方法调用产生的，方法调用结束后会弹出栈。
-
 
 栈内存分配越大越好吗？
 不是。因为物理内存是一定的，栈内存越大，可以支持更多的递归调用，但是可执行的线程数就会越少。
 
-
 方法内的局部变量是否线程安全？
 
 如果方法内部的变量没有逃离方法的作用范围，那么它是线程安全的
- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/5294eb22.html" title="redis消息队列">redis消息队列</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-03-30T11:01:45.000Z" title="发表于 2025-03-30 19:01:45">2025-03-30</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T12:30:09.464Z" title="更新于 2025-05-05 20:30:09">2025-05-05</time></span></div><div class="content">一、基于 List 结构模拟消息队列
-
+如果局部变量引用了 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/5294eb22.html" title="redis消息队列">redis消息队列</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-03-30T11:01:45.000Z" title="发表于 2025-03-30 19:01:45">2025-03-30</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-05-05T12:30:09.464Z" title="更新于 2025-05-05 20:30:09">2025-05-05</time></span></div><div class="content">一、基于 List 结构模拟消息队列
 消息队列（Message Queue），字面意思就是存放消息的队列。而 Redis 的 list 数据结构是一个双向链表，很容易模拟出队列效果。
 队列是入口和出口不在一边，因此可以利用：LPUSH 结合 RPOP、或者 RPUSH 结合 LPOP 来实现。
 不过要注意的是，当队列中没有消息时 RPOP 或 LPOP 操作会返回 null，并不像 JVM 的阻塞队列那样阻塞并等待消息。因此这里应该使用 BRPOP 或者 BLPOP 来实现阻塞效果。
 优点：
-
 利用 Redis 存储，不受限于 JVM 内存上限
 基于 Redis 的持久化机制，数据安全性有保证
 可以满足消息有序性
 
 
 缺点：
-
 无法避免消息丢失
 只支持单消费者
 
 
 
 二、基于 PubSub 的消息队列
-
-
 PubSub（发布订阅）是 Redis2.0 版本引入的消息传递模型。顾名思义，消费者可以订阅一个或多个 channel，生产者向对应 channel 发送消息后，所有订阅者都能收到相关消息。
-
 
 SUBSCRIBE channel [channel]：订阅一个或多个频道
 
-
-PU ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/4eb3381c.html" title="分布式锁">分布式锁</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-03-26T08:16:27.000Z" title="发表于 2025-03-26 16:16:27">2025-03-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-26T14:43:07.386Z" title="更新于 2025-03-26 22:43:07">2025-03-26</time></span></div><div class="content">一、分布式锁的常用实现对比
-
-
+PUBLISH c ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/4eb3381c.html" title="分布式锁">分布式锁</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-03-26T08:16:27.000Z" title="发表于 2025-03-26 16:16:27">2025-03-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-26T14:43:07.386Z" title="更新于 2025-03-26 22:43:07">2025-03-26</time></span></div><div class="content">一、分布式锁的常用实现对比
 分布式锁：满足分布式系统或集群模式下多进程可见并且互斥的锁。
 
-
 分布式锁的实现
-
 
 分布式锁的核心是实现多进程之间互斥，而满足这一点的方式有很多，常见的有三种：
 
@@ -299,7 +298,6 @@ PU ...</div></div></div><div class="recent-post-item"><div class="recent-post-in
 MySQL
 Redis
 Zookeeper
-
 
 
 
@@ -331,30 +329,20 @@ Zookeeper
 
 
 
-
 二、基于 Redis 的分布式锁
-
-
 实现分布式锁时需要实现的两个基本方法：
-
 
 获取锁：
 
-
 互斥：确保只能有一个线程获取锁
-
 
 非阻塞：尝试一次，成功返回 true，失败返回 false
 12# 添加锁，NX是互斥，EX是设置超时时间SET lock thread1 NX EX 10
 
 
-
-
 释放锁：
 
-
 手动释放
-
 
 超时释放：获取锁时添加一个超时时间
 12# 释放锁，删除即可DEL key
@@ -362,21 +350,16 @@ Zookeeper
 
 
 
-
-
 一种简单的实现:
 
-
 lua 脚本确保判断锁、删除锁的原子性
-  12 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/d27b7f98.html" title="redis缓存">redis缓存</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-03-22T07:36:24.000Z" title="发表于 2025-03-22 15:36:24">2025-03-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-26T14:39:42.293Z" title="更新于 2025-03-26 22:39:42">2025-03-26</time></span></div><div class="content">一、缓存更新策略
-
+  123456-- 比较线程标识与锁中的标 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/d27b7f98.html" title="redis缓存">redis缓存</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-03-22T07:36:24.000Z" title="发表于 2025-03-22 15:36:24">2025-03-22</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-03-26T14:39:42.293Z" title="更新于 2025-03-26 22:39:42">2025-03-26</time></span></div><div class="content">一、缓存更新策略
 
 
 
 内存淘汰
 超时剔除
 主动更新
-
 
 
 
@@ -399,23 +382,18 @@ lua 脚本确保判断锁、删除锁的原子性
 
 
 
-
 业务场景：
-
 低一致性需求：使用内存淘汰机制。例如店铺类型的查询缓存。
 高一致性需求：主动更新，并以超时剔除作为兜底方案。例如店铺详情查询的缓存。
 
 
 
-二、主动更新策略
-1. 主动更新策略的三种实现
-
+二、主动更新策略1. 主动更新策略的三种实现
 
 
 Cache Aside Pattern
-Read/Write Through Pattern
+Read&#x2F;Write Through Pattern
 Write Behind Caching Pattern
-
 
 
 
@@ -425,88 +403,37 @@ Write Behind Caching Pattern
 
 
 
-
 更推荐第一种实现。
 
 2. 操作缓存和数据库时的三个问题
-
-删除 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/99e37656.html" title="Git常规">Git常规</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-16T11:29:38.000Z" title="发表于 2025-02-16 19:29:38">2025-02-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-20T13:59:49.422Z" title="更新于 2025-02-20 21:59:49">2025-02-20</time></span></div><div class="content">一、环境配置
-1. 基本配置
-
-
+删除缓存还是 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/99e37656.html" title="Git常规">Git常规</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-16T11:29:38.000Z" title="发表于 2025-02-16 19:29:38">2025-02-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-20T13:59:49.422Z" title="更新于 2025-02-20 21:59:49">2025-02-20</time></span></div><div class="content">一、环境配置1. 基本配置
 打开 Git Bash
-
 
 设置用户信息
 12git config --global user.name &quot;yourName&quot;git config --global user.email &quot;yourEmail&quot;
 
-
-2. 为常用指令配置别名
-有些常用的指令参数非常多，每次都要输入好多参数，我们可以使用别名。
-
+2. 为常用指令配置别名有些常用的指令参数非常多，每次都要输入好多参数，我们可以使用别名。
 
 打开用户目录，创建.bashrc文件。
-
 
 在.bashrc文件中输入如下内容：
 1234#用于输出git提交日志alias git-log=&#x27;git log --pretty=oneline --all --graph --abbrev-commit&#x27;#用于输出当前目录所有文件及基本信息alias ll=&#x27;ls -al&#x27;
 
-
 打开 gitBash，执行source ~/.bashrc
 
 
-二、获取本地仓库
-要使用 Git 对我们的代码进行版本控制，首先需要获得本地仓库。
+二、获取本地仓库要使用 Git 对我们的代码进行版本控制，首先需要获得本地仓库。
 
 在电脑的任意位置创建一个空目录作为我们的本地 Git 仓库。
-进入这个目录中，点击右键打开  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/cd98383c.html" title="TS装饰器">TS装饰器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-02-09T13:35:39.000Z" title="发表于 2025-02-09 21:35:39">2025-02-09</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-14T14:18:39.465Z" title="更新于 2025-02-14 22:18:39">2025-02-14</time></span></div><div class="content">一、简介
-
-装饰器本质是一种特殊的函数，它可以对：类、属性、方法、参数进行扩展，同时能让代码更简洁。
-装饰器自2015年在ECMAScript-6中被提出到现在，已将近 10 年。
-截至目前，装饰器依然是实验性特性，需要开发者手动调整配置，来开启装饰器支持。
-装饰器有 5 种：
-
-类装饰器
-属性装饰器
-方法装饰器
-访问器装饰器
-参数装饰器
-
-
-
-注：虽然TypeScript5.0种可以直接使用类装饰器，但为了确保其他装饰器可用，现阶段使用时，仍建议使用experimentalDecorators配置来开启装饰器支持，而且不排除在未来的版本中，官方会进一步调整装饰器的相关语法。
-二、类装饰器
-1. 基本语法
-类装饰器是一个应用在类声明上的函数，可以为类添加额外的功能，或添加额外的逻辑。
-123456789101112/*	Demo函数会在Person类定义时执行	参数说明：	 target参数是被装饰的类，即：Person*/function Demo(target: Function) &#123;    console.log(target)&#125;//使用装饰器@Democla ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/dd4c9c1d.html" title="SpringBoot自定义starter">SpringBoot自定义starter</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-01-26T11:48:18.000Z" title="发表于 2025-01-26 19:48:18">2025-01-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-02-14T14:18:39.467Z" title="更新于 2025-02-14 22:18:39">2025-02-14</time></span></div><div class="content">
-
-需求：自定义 aliyun-oss-spring-boot-starter，完成阿里云 OSS 操作工具类 AliyunOSSUtils 的自动配置。
-
-
-目标：引入起步依赖之后，要想使用阿里云 OSS，注入 AliyunOSSUtils 直接使用即可。
-
-
-实现：
-
-创建 aliyun-oss-spring-boot-starter 模块
-创建 aliyun-oss-spring-boot-autoconfigure 模块，在 starter 中引入该模块
-在 aliyun-oss-spring-boot-autoconfigure 模块中定义自动配置功能，并定义自动配置文件 META-INF/spring/xxx.imports
-
-
-
-
-
-
-
-</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/109310857_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RainyDoor</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">40</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3b2912fc.html" title="微服务保护">微服务保护</a><time datetime="2025-05-05T12:12:55.000Z" title="发表于 2025-05-05 20:12:55">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/d7c50f3c.html" title="OpenFeign的使用">OpenFeign的使用</a><time datetime="2025-04-24T14:01:18.000Z" title="发表于 2025-04-24 22:01:18">2025-04-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/c1baee3f.html" title="初识JVM">初识JVM</a><time datetime="2025-04-22T09:11:18.000Z" title="发表于 2025-04-22 17:11:18">2025-04-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/e614237b.html" title="JVM内存结构">JVM内存结构</a><time datetime="2025-04-22T09:05:22.000Z" title="发表于 2025-04-22 17:05:22">2025-04-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/5294eb22.html" title="redis消息队列">redis消息队列</a><time datetime="2025-03-30T11:01:45.000Z" title="发表于 2025-03-30 19:01:45">2025-03-30</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+进入这个目录中，点击右键打开 Git bash 窗 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/109310857_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RainyDoor</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/6978c432.html" title="多层次记忆架构">多层次记忆架构</a><time datetime="2025-08-13T12:01:07.000Z" title="发表于 2025-08-13 20:01:07">2025-08-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3a3d3bf.html" title="使用Seata解决常见的分布式事务问题">使用Seata解决常见的分布式事务问题</a><time datetime="2025-05-20T13:29:39.000Z" title="发表于 2025-05-20 21:29:39">2025-05-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3b2912fc.html" title="微服务保护">微服务保护</a><time datetime="2025-05-05T12:12:55.000Z" title="发表于 2025-05-05 20:12:55">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/d7c50f3c.html" title="OpenFeign的使用">OpenFeign的使用</a><time datetime="2025-04-24T14:01:18.000Z" title="发表于 2025-04-24 22:01:18">2025-04-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/c1baee3f.html" title="初识JVM">初识JVM</a><time datetime="2025-04-22T09:11:18.000Z" title="发表于 2025-04-22 17:11:18">2025-04-22</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">JS 学习笔记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">java 学习笔记</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"><span class="card-category-list-name">计算机网络原理</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"><span class="card-category-list-name">问题解决</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/SpringCloud/" style="font-size: 1.18em; color: #999ca1">SpringCloud</a> <a href="/tags/redis/" style="font-size: 1.34em; color: #99a3b0">redis</a> <a href="/tags/%E6%B3%9B%E5%9E%8B/" style="font-size: 1.1em; color: #999">泛型</a> <a href="/tags/jvm/" style="font-size: 1.18em; color: #999ca1">jvm</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 1.1em; color: #999">字符串</a> <a href="/tags/Filter/" style="font-size: 1.1em; color: #999">Filter</a> <a href="/tags/Ajax/" style="font-size: 1.1em; color: #999">Ajax</a> <a href="/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" style="font-size: 1.1em; color: #999">动态代理</a> <a href="/tags/maven/" style="font-size: 1.1em; color: #999">maven</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.1em; color: #999">分布式</a> <a href="/tags/JS/" style="font-size: 1.1em; color: #999">JS</a> <a href="/tags/mq/" style="font-size: 1.1em; color: #999">mq</a> <a href="/tags/MySQL/" style="font-size: 1.1em; color: #999">MySQL</a> <a href="/tags/%E6%8A%A5%E9%94%99/" style="font-size: 1.1em; color: #999">报错</a> <a href="/tags/http/" style="font-size: 1.1em; color: #999">http</a> <a href="/tags/IO/" style="font-size: 1.1em; color: #999">IO</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.18em; color: #999ca1">框架</a> <a href="/tags/%E7%BC%93%E5%AD%98/" style="font-size: 1.1em; color: #999">缓存</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 1.1em; color: #999">反射</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/Interceptor/" style="font-size: 1.1em; color: #999">Interceptor</a> <a href="/tags/MyBatis/" style="font-size: 1.1em; color: #999">MyBatis</a> <a href="/tags/TypeScript/" style="font-size: 1.1em; color: #999">TypeScript</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.1em; color: #999">微服务</a> <a href="/tags/%E5%86%85%E5%AD%98/" style="font-size: 1.26em; color: #999fa8">内存</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/Junit/" style="font-size: 1.18em; color: #999ca1">Junit</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">单元测试</a> <a href="/tags/JWT/" style="font-size: 1.1em; color: #999">JWT</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 1.1em; color: #999">架构</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.1em; color: #999">多线程</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/OpenFeign/" style="font-size: 1.1em; color: #999">OpenFeign</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/SpringBoot/" style="font-size: 1.42em; color: #99a6b7">SpringBoot</a> <a href="/tags/vue2/" style="font-size: 1.1em; color: #999">vue2</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">五月 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">四月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/03/"><span class="card-archive-list-date">三月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">一月 2025</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/12/"><span class="card-archive-list-date">十二月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">十月 2024</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">九月 2024</span><span class="card-archive-list-count">7</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">42</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">85.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-05-05T13:33:08.575Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: lightgray"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By RainyDoor</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/redis/" style="font-size: 1.34em; color: #99a3b0">redis</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a> <a href="/tags/JS/" style="font-size: 1.1em; color: #999">JS</a> <a href="/tags/JWT/" style="font-size: 1.1em; color: #999">JWT</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/SpringCloud/" style="font-size: 1.26em; color: #999fa8">SpringCloud</a> <a href="/tags/IO/" style="font-size: 1.1em; color: #999">IO</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">单元测试</a> <a href="/tags/mq/" style="font-size: 1.1em; color: #999">mq</a> <a href="/tags/%E6%B3%9B%E5%9E%8B/" style="font-size: 1.1em; color: #999">泛型</a> <a href="/tags/%E7%BC%93%E5%AD%98/" style="font-size: 1.1em; color: #999">缓存</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/Ajax/" style="font-size: 1.1em; color: #999">Ajax</a> <a href="/tags/jvm/" style="font-size: 1.18em; color: #999ca1">jvm</a> <a href="/tags/Interceptor/" style="font-size: 1.1em; color: #999">Interceptor</a> <a href="/tags/MySQL/" style="font-size: 1.1em; color: #999">MySQL</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 1.1em; color: #999">反射</a> <a href="/tags/MyBatis/" style="font-size: 1.1em; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 1.42em; color: #99a6b7">SpringBoot</a> <a href="/tags/%E6%8A%A5%E9%94%99/" style="font-size: 1.1em; color: #999">报错</a> <a href="/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" style="font-size: 1.1em; color: #999">动态代理</a> <a href="/tags/TypeScript/" style="font-size: 1.1em; color: #999">TypeScript</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.18em; color: #999ca1">微服务</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.18em; color: #999ca1">框架</a> <a href="/tags/Filter/" style="font-size: 1.1em; color: #999">Filter</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.1em; color: #999">多线程</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 1.1em; color: #999">架构</a> <a href="/tags/vue2/" style="font-size: 1.1em; color: #999">vue2</a> <a href="/tags/Junit/" style="font-size: 1.18em; color: #999ca1">Junit</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.1em; color: #999">分布式</a> <a href="/tags/%E5%86%85%E5%AD%98/" style="font-size: 1.26em; color: #999fa8">内存</a> <a href="/tags/ai/" style="font-size: 1.1em; color: #999">ai</a> <a href="/tags/maven/" style="font-size: 1.1em; color: #999">maven</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/Seata/" style="font-size: 1.1em; color: #999">Seata</a> <a href="/tags/OpenFeign/" style="font-size: 1.1em; color: #999">OpenFeign</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/08/"><span class="card-archive-list-date">八月 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">五月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">四月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/03/"><span class="card-archive-list-date">三月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">一月 2025</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/12/"><span class="card-archive-list-date">十二月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">十月 2024</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">44</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">88.3k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-13T13:04:53.583Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: lightgray"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By RainyDoor</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')

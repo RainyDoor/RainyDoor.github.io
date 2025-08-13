@@ -51,7 +51,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-05-05 21:33:08'
+  postUpdate: '2025-08-13 21:04:53'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -152,7 +152,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
-<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.1.1"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"><link href="https://cdn.bootcss.com/KaTeX/0.11.1/katex.min.css" rel="stylesheet" /></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
   const $loadingBox = document.getElementById('loading-box')
   const $body = document.body
   const preloader = {
@@ -173,22 +173,79 @@
     document.addEventListener('pjax:send', () => { preloader.initLoading() })
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
-})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/109310857_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">40</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/104499170_p0.png')"><nav id="nav"><span id="blog-info"><a href="/" title="RainyDoor"><span class="site-name">RainyDoor</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">RainyDoor</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/34b48c38.html" title="IDEA使用Junit时报错java.lang.reflect.InaccessibleObjectException的解决办法">IDEA使用Junit时报错java.lang.reflect.InaccessibleObjectException的解决办法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-16T13:06:51.000Z" title="发表于 2024-08-16 21:06:51">2024-08-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.238Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">问题解决</a></span></div><div class="content">遇到的错误 java.lang.reflect.InaccessibleObjectException 表明在运行单元测试时，IDEA 的 Junit 模块尝试访问一个模块系统中未公开导出的类。从 Java 9 开始，引入了模块化系统（Project Jigsaw），它要求模块之间明确指定哪些包是可见的。如果一个模块尝试访问另一个模块中未被明确导出的包，就会抛出这个异常。
+})()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/109310857_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/104499170_p0.png')"><nav id="nav"><span id="blog-info"><a href="/" title="RainyDoor"><span class="site-name">RainyDoor</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">RainyDoor</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/e5c21bb6.html" title="JS 学习笔记">JS 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-18T08:53:05.000Z" title="发表于 2024-08-18 16:53:05">2024-08-18</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-19T08:40:28.186Z" title="更新于 2024-08-19 16:40:28">2024-08-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">JS 学习笔记</a></span></div><div class="content">一、JS 引入方式
+内部脚本：将 JS 代码定义在 HTML 页面中
+
+JavaScript 代码必须位于 &lt;script&gt;&lt;&#x2F;script&gt; 标签之间
+
+在 HTML 文档中，可以在任意地方，放置任意数量的 &lt;script&gt;
+
+一般会把脚本置于 &lt;body&gt; 元素的底部，可改善显示速度
+123&lt;script&gt;	alert(&quot;hello js!&quot;)&lt;/script&gt;
+
+
+外部脚本：将 JS 代码定义在外部 JS 文件中，然后引入到 HTML 页面中
+
+外部 JS 文件中，只包含 JS 代码，不包含 &lt;script&gt; 标签
+
+&lt;script&gt; 标签不能自闭和
+1&lt;script src=&quot;js/demo.js&quot;&gt;&lt;/script&gt;
+
+
+
+二、基础语法1. 书写语法
+区分大小写：与 Java 一样，变量名、函数名以及其他一切东西都是区分大小写的
+每行结尾的分号可有可无
+注释：
+单行注释：&#x2F;&#x2F;注释内容
+多行 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/a151d12d.html" title="Java 注解">Java 注解</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-17T04:16:55.000Z" title="发表于 2024-08-17 12:16:55">2024-08-17</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-01-20T07:43:49.998Z" title="更新于 2025-01-20 15:43:49">2025-01-20</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、注解概述
+Java 代码里的特殊标记，比如：@Override、@Test 等，作用是：让其他程序根据注解信息来决定怎么执行该程序。
+注意：注解可以用在类上、构造器上、方法上、成员变量上、参数上等位置处。
+
+二、自定义注解格式：
+123public @interface 注解名称 &#123;    属性类型 属性名() default 默认值;&#125;
+
+
+特殊属性名：value
+如果注解中只有一个 value 属性，使用注解时，value 名称可以不写。
+
+
+
+三、注解的原理
+
+注解本质是一个接口，Java 中所有注解都是继承了 Annotation 接口的；
+@注解(…)：其实本质就是一个实现类对象。实现了该注解以及 Annotation 接口。
+
+四、元注解
+修饰注解的注解
+
+
+    
+        
+            
+                @Target
+            
+            
+                @Retention
+            
+        
+    
+    
+        
+    ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/34b48c38.html" title="IDEA使用Junit时报错java.lang.reflect.InaccessibleObjectException的解决办法">IDEA使用Junit时报错java.lang.reflect.InaccessibleObjectException的解决办法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-16T13:06:51.000Z" title="发表于 2024-08-16 21:06:51">2024-08-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.238Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/">问题解决</a></span></div><div class="content"> 遇到的错误 java.lang.reflect.InaccessibleObjectException 表明在运行单元测试时，IDEA 的 Junit 模块尝试访问一个模块系统中未公开导出的类。从 Java 9 开始，引入了模块化系统（Project Jigsaw），它要求模块之间明确指定哪些包是可见的。如果一个模块尝试访问另一个模块中未被明确导出的包，就会抛出这个异常。
 可以通过在 module-info.java 文件中添加以下一行来解决问题：
 1exports 要使用的类的全类名 to junit;
+
 这里的 junit 是运行测试的模块的名称。
 </div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/8717feda.html" title="Junit 单元测试">Junit 单元测试</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-16T12:14:54.000Z" title="发表于 2024-08-16 20:14:54">2024-08-16</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.244Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、单元测试概述
-
 单元测试：针对最小的功能单元（方法），编写测试代码对其进行正确性测试。
 以前的方法：
-
 只能在 main 方法编写测试代码，去调用其他方法进行测试
 无法实现自动化测试，一个方法测试失败，可能影响其他方法的测试
 无法得到测试的报告，需要程序员自己去观察测试是否成功
 
 
 Junit 单元测试框架
-
 可以用来对方法进行测试，它是由第三方公司开源出来的（很多开发工具已经集成了 Junit 框架，比如 IDEA）
 可以灵活的编写测试代码，可以针对某个方法执行测试，也支持一键完成对全部方法的自动化测试，且各自独立
 不需要程序员去分析测试的结果，会自动生成测试报告出来
@@ -196,9 +253,7 @@ Junit 单元测试框架
 
 
 二、Junit 快速入门
-
 具体步骤
-
 将 Junit 框架的 jar 包导入到项目中（IDEA 集成了 Junit 框架，不需要自己手工导入）
 为需要测试的业务类，定义对应的测试类，并未每个业务方法，编写对应的测试方法（必须：公共、无参、无返回值）
 测试方法上必须声明 @Test 注解，然后在测试方法中，编写代码调用被测试的业务方法进行测试
@@ -206,21 +261,15 @@ Junit 单元测试框架
 
 
 
-123456789101 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3eaf3d63.html" title="java 动态代理">java 动态代理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-15T14:25:30.000Z" title="发表于 2024-08-15 22:25:30">2024-08-15</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.246Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、动态代理概述
-
-
+12345678910111213 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3eaf3d63.html" title="java 动态代理">java 动态代理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-15T14:25:30.000Z" title="发表于 2024-08-15 22:25:30">2024-08-15</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.246Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、动态代理概述
 为什么需要动态代理
 
-代理可以无侵入式的给对象增强其他的功能。调用者→代理→对象调用者\rightarrow 代理 \rightarrow 对象
-调用者→代理→对象
-
-
+代理可以无侵入式的给对象增强其他的功能。$$调用者\rightarrow 代理 \rightarrow 对象$$
 
 
 代理长什么样子
 
 代理里面就是对象要被代理的方法
-
 
 
 Java 通过什么来保证代理的样子
@@ -230,50 +279,38 @@ Java 通过什么来保证代理的样子
 
 
 二、动态代理实现
-
-
 java.lang.reflect.Proxy 类：提供了为对象产生代理对象的方法：
 1public static Object newProxyInstance(ClassLoader loader, Class&lt;?&gt;[] interfaces, InvocationHandler h);
+
 
 参数一：用于指定哪个类加载器，去加载生成的代理类；
 参数二：指定接口，这些接口用于指定生成的代理长什么样，也就是有哪些方法；
 参数三：用来指定生成的代理对象要干什么事。
 
 
-
 案例：代理明星
-123456789101112131415161718192021222324252627282930 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/7ca90ba6.html" title="java 反射">java 反射</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-14T13:54:05.000Z" title="发表于 2024-08-14 21:54:05">2024-08-14</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-18T09:01:27.755Z" title="更新于 2024-08-18 17:01:27">2024-08-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、反射概述
-
+1234567891011121314151617181920212223242526272829303132333435363738394041 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/7ca90ba6.html" title="java 反射">java 反射</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-14T13:54:05.000Z" title="发表于 2024-08-14 21:54:05">2024-08-14</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-18T09:01:27.755Z" title="更新于 2024-08-18 17:01:27">2024-08-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、反射概述
 反射允许对成员变量、成员方法和构造方法的信息进行编程访问。
 
 二、获取 class 对象的三种方式
-
 Class.forName(“全类名”)
 类名.class
 对象.getClass();
 
-12345678910111213141516public class Test &#123;    public static void main(String[] args) throws ClassNotFoundException &#123;        //1.第一种方式        //全类名：包名 + 类名        //最为常用        Class&lt;?&gt; aClass = Class.forName(&quot;com.RainyDoor.ReflectDemo1.Student&quot;);        //2.第二种方式        //一般更多的是当作参数进行使用        Class&lt;Student&gt; studentClass = Student.class;        //3.第三种方式        ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/1a94f78a.html" title="网络编程学习笔记">网络编程学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-06T12:41:01.000Z" title="发表于 2024-08-06 20:41:01">2024-08-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.249Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、网络编程概述
-
-
+12345678910111213141516public class Test &#123;    public static void main(String[] args) throws ClassNotFoundException &#123;        //1.第一种方式        //全类名：包名 + 类名        //最为常用        Class&lt;?&gt; aClass = Class.forName(&quot;com.RainyDoor.ReflectDemo1.Student&quot;);        //2.第二种方式        //一般更多的是当作参数进行使用        Class&lt;Student&gt; studentClass = Student.class;        //3.第三种方式        / ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/1a94f78a.html" title="网络编程学习笔记">网络编程学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-06T12:41:01.000Z" title="发表于 2024-08-06 20:41:01">2024-08-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.249Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、网络编程概述
 网络编程：在网络通信协议下，不同计算机上运行的程序，进行的数据传输。
-
 
 不管是什么场景，都是计算机跟计算机之间通过网络进行数据传输。
 
-
 Java 中可以使用 java.net 包下的技术轻松开发出常见的网络应用程序。
-
 
 常见的软件架构
 
-
-C/S：Client/Server 客户端/服务器
+C&#x2F;S：Client&#x2F;Server 客户端&#x2F;服务器
 在用户本地需要下载并安装客户端程序，在远程有一个服务器端程序。
 
-
-B/S：Browser/Server 浏览器/服务器
+B&#x2F;S：Browser&#x2F;Server 浏览器&#x2F;服务器
 只需要一个浏览器，用户通过不同的网址访问不同的服务器。
-
 
 
 
@@ -284,32 +321,21 @@ BS：适合移动互联网应用，可以在任何地方随时访问的系统。
 
 
 
-二、网络编程三要素
-1. IP
-
-
+二、网络编程三要素1. IP
 全称：Internet Protocol，是互联网协议地址，也称 IP 地址。是分配给上网设备的数字标签，是唯一的标识。
 
+IPv4：目前的主流方案，最多只有 $2^{32}$ 个 IP，目前已经用完了。
 
-IPv4：目前的主流方案，最多只有 2322^{32}232 个 IP，目前已经用完了。
-
-
-IPv6：为了解决 IPv4 不够用而出现的，最多有 21282^{128}2128 个 IP ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/712a89d6.html" title="Java 多线程学习笔记">Java 多线程学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-30T11:18:17.000Z" title="发表于 2024-07-30 19:18:17">2024-07-30</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.243Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、多线程概述
-
-
+IPv6：为了解决 IPv4 不够用而出现的，最多有 $2^{128 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/712a89d6.html" title="Java 多线程学习笔记">Java 多线程学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-30T11:18:17.000Z" title="发表于 2024-07-30 19:18:17">2024-07-30</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-17T07:32:09.243Z" title="更新于 2024-08-17 15:32:09">2024-08-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、多线程概述
 线程：线程是操作系统能够进行运算调度的最小单位。它被包含在进程之中，是进程中的实际运作单位。
 
-
 进程：进程是程序的基本执行实体。
-
 
 什么是多线程？
 有了多线程，我们就可以让程序同时做多件事情。
 
-
 多线程的作用？
 提高效率。
-
 
 多线程的应用场景：
 只要你想让多个事情同时运行就需要用到多线程
@@ -317,41 +343,32 @@ IPv6：为了解决 IPv4 不够用而出现的，最多有 21282^{128}2128 个 I
 
 
 二、并发和并行
-
 并发：在同一时刻，有多个指令在单个 CPU 上交替运行。
 并行：在同一时刻，有多个指令在单个 CPU 上同时执行。
 
 三、多线程的实现方式
-
-
 继承 Thread 类的方式进行实现
 
 自己定义一个类继承 Thread；
 重写 run 方法；
 创建子类的对象，并启动线程。
 
-1234567891011121314151617181920public class MyThread extends Thread&#123;    @Override    public void run() &#123;        for (int i = 0; i &lt; 100; i++) &#123;     ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/b76261ca.html" title="Java IO流学习笔记">Java IO流学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-28T13:00:56.000Z" title="发表于 2024-07-28 21:00:56">2024-07-28</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-30T11:13:24.547Z" title="更新于 2024-07-30 19:13:24">2024-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、IO 流概述
-
-
+1234567891011121314151617181920public class MyThread extends Thread&#123;    @Override    public void run() &#123;        for (int i = 0; i &lt; 100; i++) &#123;            S ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/b76261ca.html" title="Java IO流学习笔记">Java IO流学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-28T13:00:56.000Z" title="发表于 2024-07-28 21:00:56">2024-07-28</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-30T11:13:24.547Z" title="更新于 2024-07-30 19:13:24">2024-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、IO 流概述
 什么是 IO 流？
 存储和读取数据的解决方案
 I：Input	O：Output
 流：像水流一样传输数据
 
-
 IO 流的作用
 用于读写数据（本地文件，网络）
-
 
 IO 流按照流向可以分为哪两种流？
 输出流：程序 -&gt; 文件
 输入流：文件 -&gt; 程序
 
-
 IO 流按照操作文件的类型可以分类成哪两种流？
 字节流：可以操作所有类型的文件
 字符流：只能操作纯文本文件
-
 
 什么是纯文本文件
 用 Windows 系统自带的记事本打开并且能读懂的文件
@@ -359,164 +376,50 @@ txt 文件、md 文件、xml 文件、lrc 文件等。
 
 
 二、IO 流体系
-
 字节流
-
 java.io.InputStream 字节输入流
 java.io.OutputStream 字节输出流
 
 
 字符流
-
 java.io.Reader 字符输入流
 java.io.Writer 字符输出流
 
 
 注：
-
 四个类都是抽象类；
 所有的流都实现了 java.io.Closeable 接口，都是可关闭的，都有 close() 方法。流是一个管道，这个是内存和硬盘之间的通道，用完后一定要关闭，不然会耗费很多资源。
-所有的输出流都 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/a14eb637.html" title="Java泛型">Java泛型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-04-23T14:39:42.000Z" title="发表于 2024-04-23 22:39:42">2024-04-23</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-11T07:01:10.339Z" title="更新于 2024-07-11 15:01:10">2024-07-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、泛型的定义
-​	JDK5 引入的新特性，可以在编译阶段约束操作的数据类型，并进行检查。
+所有的输出流都实现了 java.i ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/a14eb637.html" title="Java泛型">Java泛型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-04-23T14:39:42.000Z" title="发表于 2024-04-23 22:39:42">2024-04-23</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-11T07:01:10.339Z" title="更新于 2024-07-11 15:01:10">2024-07-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、泛型的定义​	JDK5 引入的新特性，可以在编译阶段约束操作的数据类型，并进行检查。
 二、泛型的好处
-
 统一数据类型
 把运行时期的问题提前到了编译期间，避免了强制类型转换可能出现的异常，因为在编译阶段类型就能确定下来。
 
 三、泛型的细节
-
 泛型中不能写基本数据类型；
 指定泛型的具体类型后，传递数据时，可以传入该类型和它的子类类型；
 如果不写泛型，类型默认是 Object。
 
 四、应用场景
-
-
 泛型类：在类名后面定义泛型，创建该类对象的时候，确定类型
 123public class className&lt;E&gt; &#123;    E name;&#125;
-
 
 泛型方法：在修饰符后面定义方法，调用该方法的时候，确定类型
 1public &lt;E&gt; void method(E e) &#123;&#125;
 
-
 泛型接口：在接口名后面定义泛型，实现类确定类型，实现类延续泛型
 1public interface interfaceName&lt;E&gt; &#123;&#125;
 
-
 五、泛型的继承和通配符
-
-
 泛型不具备继承性，但是数据具备继承性：
-例如当方法有一 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/be9d25e7.html" title="Java中的接口interface">Java中的接口interface</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-04-10T12:10:37.000Z" title="发表于 2024-04-10 20:10:37">2024-04-10</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-11T07:01:27.940Z" title="更新于 2024-07-11 15:01:27">2024-07-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">java 学习笔记</a></span></div><div class="content">一、接口的定义和使用
-
-
-接口使用关键字 interface 来定义
-1public interface InterfaceNmae &#123;&#125;
-
-
-接口不能实例化
-
-
-接口和类之间是实现关系，通过 implements 关键字表示
-
-
-接口的子类（实现类）
-
-
-要么重写接口中的所有抽象方法
-
-
-要么是抽象类
-
-
-
-
-注意：
-
-
-接口和类的实现关系，可以单实现，也可以多实现
-1public class ClassName implements inter1, inter2 &#123;&#125;
-
-
-实现类还可以在继承一个类的同时实现多个接口。
-1public class ClassName extends Father implements inter1, inter2 &#123;&#125;
-
-
-二、接口的特点
-2.1 接口中成员的特点
-
-
-成员变量
-
-只能是常量
-默认修饰符：public static final
-
-
-
-构造方法：无
-
-
-成员方法
-
-只能是抽象方法
-默认修饰符：public abstract
-
-
-
-JDK7 以前：接口中只能定义抽象方法。
-
-
-J ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/655c1d54.html" title="计算机网络原理笔记">计算机网络原理笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-04-04T08:58:10.000Z" title="发表于 2024-04-04 16:58:10">2024-04-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-06T13:07:20.322Z" title="更新于 2024-07-06 21:07:20">2024-07-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/">计算机网络原理</a></span></div><div class="content">第一章 概述
-1.1 因特网概述
-因特网组成：
-
-边缘部分：由所有连接在因特网上的主机组成。这部分是用户直接使用的，用来通信和资源共享。
-核心部分：由大量网络和连接这些网络的路由器组成。这部分是为边缘部分提供服务的。
-
-1.2 三种交换方式
-一、电路交换
-
-电路交换：电话交换机接通电话线的方式称为电路交换。
-从通信资源的分配角度来看，交换就是按照某种方式动态地分配传输线路的资源
-电路交换的三个步骤：
-
-建立连接（分配通信资源）
-通话（一直占用通信资源）
-释放连接（归还通信资源）
-
-
-
-二、分组交换
-
-发送方：构造分组，发送分组
-路由器：缓存分组，转发分组
-接收方：接收分组，还原报文
-
-三、报文交换
-目前较少使用，被较先进的分组交换所取代。
-四、总结
-
-    
-    	
-        	
-            优点
-            缺点
-        
-    
-    
-    	
-        	电路交换
-            1）通信时延小2）有序传输3）没有冲突4）使用范围广5）实时性强6）控制简单
-            1）建立连接时间长2）线路独占，使 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/109310857_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RainyDoor</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">42</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">40</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3b2912fc.html" title="微服务保护">微服务保护</a><time datetime="2025-05-05T12:12:55.000Z" title="发表于 2025-05-05 20:12:55">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/d7c50f3c.html" title="OpenFeign的使用">OpenFeign的使用</a><time datetime="2025-04-24T14:01:18.000Z" title="发表于 2025-04-24 22:01:18">2025-04-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/c1baee3f.html" title="初识JVM">初识JVM</a><time datetime="2025-04-22T09:11:18.000Z" title="发表于 2025-04-22 17:11:18">2025-04-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/e614237b.html" title="JVM内存结构">JVM内存结构</a><time datetime="2025-04-22T09:05:22.000Z" title="发表于 2025-04-22 17:05:22">2025-04-22</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/5294eb22.html" title="redis消息队列">redis消息队列</a><time datetime="2025-03-30T11:01:45.000Z" title="发表于 2025-03-30 19:01:45">2025-03-30</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+例如当方法有一个泛型为 E 的 A ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/109310857_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RainyDoor</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/6978c432.html" title="多层次记忆架构">多层次记忆架构</a><time datetime="2025-08-13T12:01:07.000Z" title="发表于 2025-08-13 20:01:07">2025-08-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3a3d3bf.html" title="使用Seata解决常见的分布式事务问题">使用Seata解决常见的分布式事务问题</a><time datetime="2025-05-20T13:29:39.000Z" title="发表于 2025-05-20 21:29:39">2025-05-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3b2912fc.html" title="微服务保护">微服务保护</a><time datetime="2025-05-05T12:12:55.000Z" title="发表于 2025-05-05 20:12:55">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/d7c50f3c.html" title="OpenFeign的使用">OpenFeign的使用</a><time datetime="2025-04-24T14:01:18.000Z" title="发表于 2025-04-24 22:01:18">2025-04-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/c1baee3f.html" title="初识JVM">初识JVM</a><time datetime="2025-04-22T09:11:18.000Z" title="发表于 2025-04-22 17:11:18">2025-04-22</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">JS 学习笔记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">java 学习笔记</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"><span class="card-category-list-name">计算机网络原理</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"><span class="card-category-list-name">问题解决</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/SpringCloud/" style="font-size: 1.18em; color: #999ca1">SpringCloud</a> <a href="/tags/redis/" style="font-size: 1.34em; color: #99a3b0">redis</a> <a href="/tags/%E6%B3%9B%E5%9E%8B/" style="font-size: 1.1em; color: #999">泛型</a> <a href="/tags/jvm/" style="font-size: 1.18em; color: #999ca1">jvm</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 1.1em; color: #999">字符串</a> <a href="/tags/Filter/" style="font-size: 1.1em; color: #999">Filter</a> <a href="/tags/Ajax/" style="font-size: 1.1em; color: #999">Ajax</a> <a href="/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" style="font-size: 1.1em; color: #999">动态代理</a> <a href="/tags/maven/" style="font-size: 1.1em; color: #999">maven</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.1em; color: #999">分布式</a> <a href="/tags/JS/" style="font-size: 1.1em; color: #999">JS</a> <a href="/tags/mq/" style="font-size: 1.1em; color: #999">mq</a> <a href="/tags/MySQL/" style="font-size: 1.1em; color: #999">MySQL</a> <a href="/tags/%E6%8A%A5%E9%94%99/" style="font-size: 1.1em; color: #999">报错</a> <a href="/tags/http/" style="font-size: 1.1em; color: #999">http</a> <a href="/tags/IO/" style="font-size: 1.1em; color: #999">IO</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.18em; color: #999ca1">框架</a> <a href="/tags/%E7%BC%93%E5%AD%98/" style="font-size: 1.1em; color: #999">缓存</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 1.1em; color: #999">反射</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/Interceptor/" style="font-size: 1.1em; color: #999">Interceptor</a> <a href="/tags/MyBatis/" style="font-size: 1.1em; color: #999">MyBatis</a> <a href="/tags/TypeScript/" style="font-size: 1.1em; color: #999">TypeScript</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.1em; color: #999">微服务</a> <a href="/tags/%E5%86%85%E5%AD%98/" style="font-size: 1.26em; color: #999fa8">内存</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/Junit/" style="font-size: 1.18em; color: #999ca1">Junit</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">单元测试</a> <a href="/tags/JWT/" style="font-size: 1.1em; color: #999">JWT</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 1.1em; color: #999">架构</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.1em; color: #999">多线程</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/OpenFeign/" style="font-size: 1.1em; color: #999">OpenFeign</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/SpringBoot/" style="font-size: 1.42em; color: #99a6b7">SpringBoot</a> <a href="/tags/vue2/" style="font-size: 1.1em; color: #999">vue2</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">五月 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">四月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/03/"><span class="card-archive-list-date">三月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">一月 2025</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/12/"><span class="card-archive-list-date">十二月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">十月 2024</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/09/"><span class="card-archive-list-date">九月 2024</span><span class="card-archive-list-count">7</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">42</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">85.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-05-05T13:33:08.575Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: lightgray"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By RainyDoor</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/redis/" style="font-size: 1.34em; color: #99a3b0">redis</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a> <a href="/tags/JS/" style="font-size: 1.1em; color: #999">JS</a> <a href="/tags/JWT/" style="font-size: 1.1em; color: #999">JWT</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/SpringCloud/" style="font-size: 1.26em; color: #999fa8">SpringCloud</a> <a href="/tags/IO/" style="font-size: 1.1em; color: #999">IO</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">单元测试</a> <a href="/tags/mq/" style="font-size: 1.1em; color: #999">mq</a> <a href="/tags/%E6%B3%9B%E5%9E%8B/" style="font-size: 1.1em; color: #999">泛型</a> <a href="/tags/%E7%BC%93%E5%AD%98/" style="font-size: 1.1em; color: #999">缓存</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/Ajax/" style="font-size: 1.1em; color: #999">Ajax</a> <a href="/tags/jvm/" style="font-size: 1.18em; color: #999ca1">jvm</a> <a href="/tags/Interceptor/" style="font-size: 1.1em; color: #999">Interceptor</a> <a href="/tags/MySQL/" style="font-size: 1.1em; color: #999">MySQL</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 1.1em; color: #999">反射</a> <a href="/tags/MyBatis/" style="font-size: 1.1em; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 1.42em; color: #99a6b7">SpringBoot</a> <a href="/tags/%E6%8A%A5%E9%94%99/" style="font-size: 1.1em; color: #999">报错</a> <a href="/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" style="font-size: 1.1em; color: #999">动态代理</a> <a href="/tags/TypeScript/" style="font-size: 1.1em; color: #999">TypeScript</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.18em; color: #999ca1">微服务</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.18em; color: #999ca1">框架</a> <a href="/tags/Filter/" style="font-size: 1.1em; color: #999">Filter</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.1em; color: #999">多线程</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 1.1em; color: #999">架构</a> <a href="/tags/vue2/" style="font-size: 1.1em; color: #999">vue2</a> <a href="/tags/Junit/" style="font-size: 1.18em; color: #999ca1">Junit</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.1em; color: #999">分布式</a> <a href="/tags/%E5%86%85%E5%AD%98/" style="font-size: 1.26em; color: #999fa8">内存</a> <a href="/tags/ai/" style="font-size: 1.1em; color: #999">ai</a> <a href="/tags/maven/" style="font-size: 1.1em; color: #999">maven</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/Seata/" style="font-size: 1.1em; color: #999">Seata</a> <a href="/tags/OpenFeign/" style="font-size: 1.1em; color: #999">OpenFeign</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/08/"><span class="card-archive-list-date">八月 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">五月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">四月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/03/"><span class="card-archive-list-date">三月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">一月 2025</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/12/"><span class="card-archive-list-date">十二月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">十月 2024</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">44</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">88.3k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-13T13:04:53.583Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: lightgray"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By RainyDoor</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
