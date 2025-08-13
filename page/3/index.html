@@ -51,7 +51,7 @@
   isHome: true,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2025-08-13 21:04:53'
+  postUpdate: '2025-08-13 21:08:19'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -174,109 +174,88 @@
     document.addEventListener('pjax:complete', () => { preloader.endLoading() })
   }
 })()</script><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/109310857_p0.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header" style="background-image: url('/img/104499170_p0.png')"><nav id="nav"><span id="blog-info"><a href="/" title="RainyDoor"><span class="site-name">RainyDoor</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">RainyDoor</h1><div id="site-subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/400ea470.html" title="登录校验">登录校验</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-10-07T05:52:15.000Z" title="发表于 2024-10-07 13:52:15">2024-10-07</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.048Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、概述
+
 问题分析
 在没有登录校验前，在未登录情况下，我们也可以直接访问必须登录后才能使用的功能，例如管理系统中的部门管理、员工管理等功能。
 
 
 
+image-20241007140120732
 
 
 登录标记
-
 用户登录成功之后，每一次请求中，都可以获取到该标记（会话技术）。
-
-
 统一拦截
-
 过滤器 Filter
 拦截器 Interceptor（SpringBoot 提供的）
 
-
-
 二、会话技术
+
 会话：用户打开浏览器，访问 web 服务器的资源，会话建立，直到有一方断开连接，会话结束。在一次会话中可以包含多次请求和响应。
-
 会话跟踪：一种维护浏览器状态的方法，服务器需要识别多次请求是否来自于同一浏览器，以便在同一次会话的多次请求间共享数据。
-
 会话跟踪方案：
-
 客户端会话跟踪技术：Cookie
+
+
+image-20241007143523228
 
 
 优点：
 HTTP 协议中支持的技术
-
-
 缺点：
 移动端 APP 无法使用 Cookie
 不安全，用户可以自己禁用 Cookie
-Cookie 不能跨域（跨域区分三个维度：协议、IP&#x2F;域名、端口）
+Cookie 不能跨域（跨域区分三个维度：协议、IP/域名、端口） ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/7957b469.html" title="SpringBoot配置文件">SpringBoot配置文件</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-29T12:06:03.000Z" title="发表于 2024-09-29 20:06:03">2024-09-29</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.044Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、参数配置化
 
-
-
-
-服务端会话跟踪技术：Session
-
-
-优点：
-存储在服务端，安全
-
-
-缺点：
-服务器集群环境下无法直接使用 Session
- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/7957b469.html" title="SpringBoot配置文件">SpringBoot配置文件</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-29T12:06:03.000Z" title="发表于 2024-09-29 20:06:03">2024-09-29</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.044Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、参数配置化
-@Value 注解通常用于外部配置的属性注入，具体用法为：@Value(“${配置文件中的 key}”)
+@Value 注解通常用于外部配置的属性注入，具体用法为：@Value(&quot;${配置文件中的 key}&quot;)
 
 12345#阿里云OSS配置aliyun.oss.endpoint=https://oss-cn-beijing.aliyuncs.comaliyun.oss.accessKeyId=LTAI5tMUqPrnj9tut46amXqAaliyun.oss.accessKeySecret=b1mkOmTpXMgNgHnDLepuWT2w0tLv66aliyun.oss.bucketName=web-tlias-rainydoor
+1234567891011121314@Componentpublic class AliOSSUtils &#123;    @Value(&quot;$&#123;aliyun.oss.endpoint&#125;&quot;)    private String endpoint;    @Value(&quot;$&#123;aliyun.oss.accessKeyId&#125;&quot;)     ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/592e5fba.html" title="文件上传">文件上传</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-27T02:36:32.000Z" title="发表于 2024-09-27 10:36:32">2024-09-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.046Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、简介
 
-1234567891011121314@Componentpublic class AliOSSUtils &#123;    @Value(&quot;$&#123;aliyun.oss.endpoint&#125;&quot;)    private String endpoint;    @Value(&quot;$&#123;aliyun.oss.accessKeyId&#125;&quot;)    private String  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/592e5fba.html" title="文件上传">文件上传</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-27T02:36:32.000Z" title="发表于 2024-09-27 10:36:32">2024-09-27</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.046Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、简介
 文件上传，是指将本地图片、视频、音频等文件上传到服务器，供其他用户浏览或下载的过程。
 文件上传在项目中应用非常广泛，我们经常发微博、发微信朋友圈都用到了文件上传功能。
 
 二、前端部分
+
 文件上传前端页面三要素
+
 
 至少一个表单项：file
 提交方式：post。因为提交文件通常都比较大。
-设置表单编码格式：enctype&#x3D;”multipart&#x2F;form-data”。普通默认编码格式不适合传输大型二进制数据。
+设置表单编码格式：enctype=&quot;multipart/form-data&quot;。普通默认编码格式不适合传输大型二进制数据。
 
-123456&lt;form action=&quot;/upload&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    姓名：&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;br&gt;    年龄：&lt;input tpye=&quot;text&quot; name=&quot;age&quot;&gt;&lt;br&gt;    头像：&lt;input type ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/a8587907.html" title="MyBatis学习">MyBatis学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-08T11:28:57.000Z" title="发表于 2024-09-08 19:28:57">2024-09-08</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.043Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、MyBatis 入门
+123456&lt;form action=&quot;/upload&quot; method=&quot;post&quot; enctype=&quot;multipart/form-data&quot;&gt;    姓名：&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;br&gt;    年龄：&lt;input tpye=&quot;text&quot; name=&quot;age&quot;&gt;&lt;br&gt;     ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/a8587907.html" title="MyBatis学习">MyBatis学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-08T11:28:57.000Z" title="发表于 2024-09-08 19:28:57">2024-09-08</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.043Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、MyBatis 入门
+
 MyBatis 是一款优秀的持久层框架，用于简化 JDBC 的开发。
 官网
 
 1. JDBC 介绍
+
 JDBC（Java DataBase Connectivity），就是使用 Java 语言操作关系型数据库的一套 API。
-
 本质
-
 Sun 公司官方定义的一套操作所有关系型数据库的规范，即接口。
 各个数据库厂商去实现这套接口，提供数据库驱动 jar 包。
 我们可以使用这套接口（JDBC）编程，真正执行的代码是驱动 jar 包中的实现类。
-
-
 对比
-
 JDBC 的缺点
+
 硬编码问题，变动数据库需要修改 Java 代码；
 频繁创建和释放连接对象，浪费资源、降低性能；
 获取信息时根据字段编写代码，比较繁琐。
 
-
 MyBatis 的优点
+
 变动数据库时只需要修改配置文件即可；
 连接对象都放在数据库连接池中，随用随取；
 获取信息只需要编写 Mapper 接口即可自动封装成对象。
 
 
-
-
-
 2. 数据库连接池
+
 数据库连接池是一个容器，负责分配、管理数据库连接（Connection）。
+它允许应用程序重复使用一个现有的数据库连接 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/c6fb831a.html" title="MySQL学习">MySQL学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-06T02:07:18.000Z" title="发表于 2024-09-06 10:07:18">2024-09-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.042Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、数据库设计
+1. 数据库概述
 
-它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个。
-
-释放空闲时间超过最大 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/c6fb831a.html" title="MySQL学习">MySQL学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-06T02:07:18.000Z" title="发表于 2024-09-06 10:07:18">2024-09-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-10-14T12:37:27.042Z" title="更新于 2024-10-14 20:37:27">2024-10-14</time></span></div><div class="content">一、数据库设计1. 数据库概述
 数据库：DataBase（DB），是存储和管理数据的仓库。
 数据库管理系统：DataBase Management System（DBMS），操纵和管理数据库的大型软件。
 SQL：Structured Query Language，操作关系型数据库的编程语言，定义了一套操作关系型数据库统一标准。
@@ -285,25 +264,22 @@ SQL：Structured Query Language，操作关系型数据库的编程语言，定�
 使用表存储数据，格式统一，便于维护
 使用 SQL 语言操作，标准统一，使用方便，可用于复杂查询
 
-
-
 2. MySQL 概述
-SQL 简介
 
+SQL 简介
 通用语法
+
 SQL 语句可以单行或多行书写，以分号结尾。
-SQL 语句可以使用空格&#x2F;缩进来增强语句的可读性。
+SQL 语句可以使用空格/缩进来增强语句的可读性。
 MySQL 数据库的 SQL 语句不区分大小写。
 注释：
-单行注释：– 注释内容 或 # 注释内容（MySQL 特有）
-多行注释：&#x2F;* 注释内容 *&#x2F;
 
 
-
-
-
+单行注释：-- 注释内容 或 # 注释内容（MySQL 特有）
+多行注释：/* 注释内容 */
 
 SQL 分类
+
 
 
 
@@ -313,59 +289,66 @@ SQL 分类
 
 
 
+
 DDL
-Data Definition Language
-数据定义语言，用来定义数据库 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3ca78541.html" title="分层解耦">分层解耦</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-06T00:34:55.000Z" title="发表于 2024-09-06 08:34:55">2024-09-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T02:05:35.541Z" title="更新于 2024-09-06 10:05:35">2024-09-06</time></span></div><div class="content">一、三层架构
+Data Definition ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3ca78541.html" title="分层解耦">分层解耦</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-06T00:34:55.000Z" title="发表于 2024-09-06 08:34:55">2024-09-06</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T02:05:35.541Z" title="更新于 2024-09-06 10:05:35">2024-09-06</time></span></div><div class="content">一、三层架构
+
 单一职责原则
-
 controller：控制层，接收前端发送的请求，对请求进行处理，并响应数据。
-
 service：业务逻辑层，处理具体的业务逻辑。
-
 dao：数据访问层（Data Access Object，持久层），负责数据访问操作，包括数据的增删改查。
-
 拆分前后对比
 
 
 
+image-20240906090139251
+
 二、分层解耦
+
 内聚：软件中各个功能模块内部的功能联系。
-耦合：衡量软件中各个层&#x2F;模块之间的依赖、关联的程度。
+耦合：衡量软件中各个层/模块之间的依赖、关联的程度。
 软件设计原则：高内聚低耦合。
 控制反转：Inversion Of Control，简称 IOC。对象的创建控制权由程序自身转移到外部（容器），这种思想称为控制反转。
 依赖注入：Dependency Injection，简称 DI。容器为应用程序提供运行时所依赖的资源，称之为依赖注入。
 Bean 对象：IOC 容器中创建、管理的对象，称之为 bean。
 
 三、IOC &amp; DI 入门
+
 Service 层及 Dao 层的实现类，交给 IOC 容器管理。
-123456789101112131415161718192021222324252627282930313233343536 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2128a2f6.html" title="Web请求响应">Web请求响应</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-05T12:24:29.000Z" title="发表于 2024-09-05 20:24:29">2024-09-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:35:14.577Z" title="更新于 2024-09-06 08:35:14">2024-09-06</time></span></div><div class="content">一、请求数据1. 简单参数
+
+123456789101112131 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2128a2f6.html" title="Web请求响应">Web请求响应</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-05T12:24:29.000Z" title="发表于 2024-09-05 20:24:29">2024-09-05</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:35:14.577Z" title="更新于 2024-09-06 08:35:14">2024-09-06</time></span></div><div class="content">一、请求数据
+1. 简单参数
+
 原始方式获取请求参数
 
-Controller 方法形参中声明 HttpServletRequest 对象
 
+Controller 方法形参中声明 HttpServletRequest 对象
 调用对象的 getParameter（参数名）
-123456789101112@RestControllerpublic class RequestController &#123;    @RequestMapping(&quot;/simpleParam&quot;)    public String simpleParam(HttpServletRequest request) &#123;        String name = request.getParameter(&quot;name&quot;);        String ageStr = request.getParameter(&quot;age&quot;);        int age = Integer.parseInt(ageStr);        System.out.println(name + &quot;: &quot; + age);        re ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/af3eed3c.html" title="HTTP协议">HTTP协议</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-04T12:19:24.000Z" title="发表于 2024-09-04 20:19:24">2024-09-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:35:14.576Z" title="更新于 2024-09-06 08:35:14">2024-09-06</time></span></div><div class="content">一、HTTP 概述
+123456789101112@RestControllerpublic class RequestController &#123;    @RequestMapping(&quot;/simpleParam&quot;)    public String simpleParam(HttpServletRequest request) &#123;        String name = request.getParameter(&quot;name&quot;);        String ageStr = request.getParameter(&quot;age&quot;);        int age = Integer.parseInt(ageStr);        System.out.println(name + &quot;: &quot; + age); ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/af3eed3c.html" title="HTTP协议">HTTP协议</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-09-04T12:19:24.000Z" title="发表于 2024-09-04 20:19:24">2024-09-04</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:35:14.576Z" title="更新于 2024-09-06 08:35:14">2024-09-06</time></span></div><div class="content">一、HTTP 概述
+
 概念：Hyper Text Transfer Protocol，超文本传输协议，规定了浏览器和服务器之间数据传输的规则。
 特点：
+
+
 基于 TCP 协议：面向连接，安全
 基于请求-响应模型：一次请求对应一次响应
 HTTP 协议是无状态的协议，对于事物处理没有记忆能力。每次请求-响应都是独立的。
+
 缺点：多次请求间不能共享数据
 优点：速度快
 
 
-
-
-
 二、请求协议
-请求行：请求数据第一行（请求方式、资源路径、协议）
 
+请求行：请求数据第一行（请求方式、资源路径、协议）
 请求头：第二行开始，格式 key: value
+
 
 
 
 key
 说明
+
 
 
 
@@ -393,69 +376,56 @@ Content-Type
 请求主体的数据类型
 
 
-Content-Length
-请求主体的大小（单位：字节）
+Content-Leng ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/6341f0d8.html" title="Maven学习">Maven学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-26T06:35:29.000Z" title="发表于 2024-08-26 14:35:29">2024-08-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:35:14.576Z" title="更新于 2024-09-06 08:35:14">2024-09-06</time></span></div><div class="content">一、Maven 概述
 
-
-
-请求体：POST 请求，存放请求参数
-
-请求方式-GET：请求参数在 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/6341f0d8.html" title="Maven学习">Maven学习</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-26T06:35:29.000Z" title="发表于 2024-08-26 14:35:29">2024-08-26</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:35:14.576Z" title="更新于 2024-09-06 08:35:14">2024-09-06</time></span></div><div class="content">一、Maven 概述
 Apache Maven 是一个项目管理和构建工具，它基于项目对象模型（POM）的概念，通过一小段描述信息来管理项目的构建。
-
 作用：
-
 依赖管理：方便快捷的管理项目依赖的资源（jar 包），避免版本冲突问题。
 统一项目结构：提供标准、统一的项目结构。
 项目构建：标准跨平台（Linux, Windows, MacOS）的自动化项目构建方式。
-
-
 官网
-
 仓库：用于存储资源，管理各种 jar 包。
-
 本地仓库：自己计算机上的一个目录。
 中央仓库：由 Maven 团队维护的全球唯一的。仓库地址
 远程仓库（私服）：一般由公司团队搭建的私有仓库。
-
-
 安装
-
 安装步骤：
 
 解压 apache-maven-bin.zip
+配置本地仓库：修改 conf/settings.xml 中的 &lt;localRepository&gt; 为一个指定目录。
 
-配置本地仓库：修改 conf&#x2F;settings.xml 中的 &lt;localRepository&gt; 为一个指定目录。
 1&lt;localRepository&gt;E:\develop\apache-maven\mvn_repo&lt;/localRepository&gt;
 
-配置阿里云私服：修改 conf&#x2F;settin ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3881aba5.html" title="Ajax 学习笔记">Ajax 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-19T13:18:43.000Z" title="发表于 2024-08-19 21:18:43">2024-08-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:35:14.575Z" title="更新于 2024-09-06 08:35:14">2024-09-06</time></span></div><div class="content">一、Ajax 概述
+配置阿里云私服：修改 conf/sett ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/3881aba5.html" title="Ajax 学习笔记">Ajax 学习笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-19T13:18:43.000Z" title="发表于 2024-08-19 21:18:43">2024-08-19</time><span class="article-meta-separator">|</span><i class="fas fa-history"></i><span class="article-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-09-06T00:35:14.575Z" title="更新于 2024-09-06 08:35:14">2024-09-06</time></span></div><div class="content">一、Ajax 概述
+
 概念：Asynchronous JavaScript And XML，异步的 JavaScript 和 XML。
 作用：
 数据交换：通过 Ajax 可以给服务器发送请求，并获取服务器响应的数据。
 异步交互：可以在不重新加载整个页面的情况下，与服务器交换数据并更新部分网页的技术，如：搜索联想、用户名是否可用的校验等等。
 
-
-
 二、Axios
+
 介绍：Axios 对原生的 Ajax 进行了封装，简化书写，快速开发。
 官网
 
 - Axios 入门
+
 引入 Axios 的 js 文件
+
 1&lt;script src=&quot;js/axios.js&quot;&gt;&lt;/script&gt;
 
 使用 Axios 发送请求，并获取响应结果
-123456axios(&#123;    method: &quot;get&quot;,    url: &quot;&quot;&#125;).then((result) =&gt; &#123;    console.log(result.data)&#125;)
 
-1234567axios(&#123;    method:  ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/109310857_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RainyDoor</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/6978c432.html" title="多层次记忆架构">多层次记忆架构</a><time datetime="2025-08-13T12:01:07.000Z" title="发表于 2025-08-13 20:01:07">2025-08-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3a3d3bf.html" title="使用Seata解决常见的分布式事务问题">使用Seata解决常见的分布式事务问题</a><time datetime="2025-05-20T13:29:39.000Z" title="发表于 2025-05-20 21:29:39">2025-05-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3b2912fc.html" title="微服务保护">微服务保护</a><time datetime="2025-05-05T12:12:55.000Z" title="发表于 2025-05-05 20:12:55">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/d7c50f3c.html" title="OpenFeign的使用">OpenFeign的使用</a><time datetime="2025-04-24T14:01:18.000Z" title="发表于 2025-04-24 22:01:18">2025-04-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/c1baee3f.html" title="初识JVM">初识JVM</a><time datetime="2025-04-22T09:11:18.000Z" title="发表于 2025-04-22 17:11:18">2025-04-22</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+123456axios(&#123;    method: &quot;get&quot;,    url: &quot;&quot;&#125;).then((result) =&gt; &#123;    console.log(result.data)&#125;)
+1234567a ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><a class="page-number" href="/page/5/#content-inner">5</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/109310857_p0.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">RainyDoor</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">44</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">42</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">4</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/RainyDoor" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:3391182076@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/6978c432.html" title="多层次记忆架构">多层次记忆架构</a><time datetime="2025-08-13T12:01:07.000Z" title="发表于 2025-08-13 20:01:07">2025-08-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3a3d3bf.html" title="使用Seata解决常见的分布式事务问题">使用Seata解决常见的分布式事务问题</a><time datetime="2025-05-20T13:29:39.000Z" title="发表于 2025-05-20 21:29:39">2025-05-20</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/3b2912fc.html" title="微服务保护">微服务保护</a><time datetime="2025-05-05T12:12:55.000Z" title="发表于 2025-05-05 20:12:55">2025-05-05</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/d7c50f3c.html" title="OpenFeign的使用">OpenFeign的使用</a><time datetime="2025-04-24T14:01:18.000Z" title="发表于 2025-04-24 22:01:18">2025-04-24</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/c1baee3f.html" title="初识JVM">初识JVM</a><time datetime="2025-04-22T09:11:18.000Z" title="发表于 2025-04-22 17:11:18">2025-04-22</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
             <i class="fas fa-folder-open"></i>
             <span>分类</span>
             
             </div>
             <ul class="card-category-list" id="aside-cat-list">
             <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/JS-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">JS 学习笔记</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/java-%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"><span class="card-category-list-name">java 学习笔记</span><span class="card-category-list-count">11</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E5%8E%9F%E7%90%86/"><span class="card-category-list-name">计算机网络原理</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"><span class="card-category-list-name">问题解决</span><span class="card-category-list-count">1</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/redis/" style="font-size: 1.34em; color: #99a3b0">redis</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a> <a href="/tags/JS/" style="font-size: 1.1em; color: #999">JS</a> <a href="/tags/JWT/" style="font-size: 1.1em; color: #999">JWT</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/SpringCloud/" style="font-size: 1.26em; color: #999fa8">SpringCloud</a> <a href="/tags/IO/" style="font-size: 1.1em; color: #999">IO</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">单元测试</a> <a href="/tags/mq/" style="font-size: 1.1em; color: #999">mq</a> <a href="/tags/%E6%B3%9B%E5%9E%8B/" style="font-size: 1.1em; color: #999">泛型</a> <a href="/tags/%E7%BC%93%E5%AD%98/" style="font-size: 1.1em; color: #999">缓存</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/Ajax/" style="font-size: 1.1em; color: #999">Ajax</a> <a href="/tags/jvm/" style="font-size: 1.18em; color: #999ca1">jvm</a> <a href="/tags/Interceptor/" style="font-size: 1.1em; color: #999">Interceptor</a> <a href="/tags/MySQL/" style="font-size: 1.1em; color: #999">MySQL</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 1.1em; color: #999">反射</a> <a href="/tags/MyBatis/" style="font-size: 1.1em; color: #999">MyBatis</a> <a href="/tags/SpringBoot/" style="font-size: 1.42em; color: #99a6b7">SpringBoot</a> <a href="/tags/%E6%8A%A5%E9%94%99/" style="font-size: 1.1em; color: #999">报错</a> <a href="/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" style="font-size: 1.1em; color: #999">动态代理</a> <a href="/tags/TypeScript/" style="font-size: 1.1em; color: #999">TypeScript</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.18em; color: #999ca1">微服务</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.18em; color: #999ca1">框架</a> <a href="/tags/Filter/" style="font-size: 1.1em; color: #999">Filter</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.1em; color: #999">多线程</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 1.1em; color: #999">架构</a> <a href="/tags/vue2/" style="font-size: 1.1em; color: #999">vue2</a> <a href="/tags/Junit/" style="font-size: 1.18em; color: #999ca1">Junit</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.1em; color: #999">分布式</a> <a href="/tags/%E5%86%85%E5%AD%98/" style="font-size: 1.26em; color: #999fa8">内存</a> <a href="/tags/ai/" style="font-size: 1.1em; color: #999">ai</a> <a href="/tags/maven/" style="font-size: 1.1em; color: #999">maven</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/Seata/" style="font-size: 1.1em; color: #999">Seata</a> <a href="/tags/OpenFeign/" style="font-size: 1.1em; color: #999">OpenFeign</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/08/"><span class="card-archive-list-date">八月 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">五月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">四月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/03/"><span class="card-archive-list-date">三月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">一月 2025</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/12/"><span class="card-archive-list-date">十二月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">十月 2024</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">44</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">88.3k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-13T13:04:53.583Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: lightgray"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By RainyDoor</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%9E%B6%E6%9E%84/" style="font-size: 1.1em; color: #999">架构</a> <a href="/tags/%E5%BE%AE%E6%9C%8D%E5%8A%A1/" style="font-size: 1.18em; color: #999ca1">微服务</a> <a href="/tags/TypeScript/" style="font-size: 1.1em; color: #999">TypeScript</a> <a href="/tags/Ajax/" style="font-size: 1.1em; color: #999">Ajax</a> <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">计算机网络</a> <a href="/tags/maven/" style="font-size: 1.1em; color: #999">maven</a> <a href="/tags/%E5%8F%8D%E5%B0%84/" style="font-size: 1.1em; color: #999">反射</a> <a href="/tags/%E7%BD%91%E7%BB%9C/" style="font-size: 1.1em; color: #999">网络</a> <a href="/tags/%E5%88%86%E5%B8%83%E5%BC%8F/" style="font-size: 1.1em; color: #999">分布式</a> <a href="/tags/%E7%BC%93%E5%AD%98/" style="font-size: 1.1em; color: #999">缓存</a> <a href="/tags/MySQL/" style="font-size: 1.1em; color: #999">MySQL</a> <a href="/tags/ai/" style="font-size: 1.1em; color: #999">ai</a> <a href="/tags/Git/" style="font-size: 1.1em; color: #999">Git</a> <a href="/tags/%E5%AD%97%E7%AC%A6%E4%B8%B2/" style="font-size: 1.1em; color: #999">字符串</a> <a href="/tags/IO/" style="font-size: 1.1em; color: #999">IO</a> <a href="/tags/JWT/" style="font-size: 1.1em; color: #999">JWT</a> <a href="/tags/%E6%B3%9B%E5%9E%8B/" style="font-size: 1.1em; color: #999">泛型</a> <a href="/tags/Seata/" style="font-size: 1.1em; color: #999">Seata</a> <a href="/tags/SpringBoot/" style="font-size: 1.42em; color: #99a6b7">SpringBoot</a> <a href="/tags/Interceptor/" style="font-size: 1.1em; color: #999">Interceptor</a> <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/" style="font-size: 1.1em; color: #999">数据库</a> <a href="/tags/java/" style="font-size: 1.5em; color: #99a9bf">java</a> <a href="/tags/http/" style="font-size: 1.1em; color: #999">http</a> <a href="/tags/Junit/" style="font-size: 1.18em; color: #999ca1">Junit</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 1.1em; color: #999">前端</a> <a href="/tags/web/" style="font-size: 1.1em; color: #999">web</a> <a href="/tags/SpringCloud/" style="font-size: 1.26em; color: #999fa8">SpringCloud</a> <a href="/tags/mq/" style="font-size: 1.1em; color: #999">mq</a> <a href="/tags/JS/" style="font-size: 1.1em; color: #999">JS</a> <a href="/tags/%E5%A4%9A%E7%BA%BF%E7%A8%8B/" style="font-size: 1.1em; color: #999">多线程</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 1.18em; color: #999ca1">框架</a> <a href="/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">设计模式</a> <a href="/tags/%E5%8A%A8%E6%80%81%E4%BB%A3%E7%90%86/" style="font-size: 1.1em; color: #999">动态代理</a> <a href="/tags/vue2/" style="font-size: 1.1em; color: #999">vue2</a> <a href="/tags/OpenFeign/" style="font-size: 1.1em; color: #999">OpenFeign</a> <a href="/tags/%E5%86%85%E5%AD%98/" style="font-size: 1.26em; color: #999fa8">内存</a> <a href="/tags/jvm/" style="font-size: 1.18em; color: #999ca1">jvm</a> <a href="/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/" style="font-size: 1.1em; color: #999">单元测试</a> <a href="/tags/redis/" style="font-size: 1.34em; color: #99a3b0">redis</a> <a href="/tags/%E6%8A%A5%E9%94%99/" style="font-size: 1.1em; color: #999">报错</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span><a class="card-more-btn" href="/archives/" title="查看更多">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/08/"><span class="card-archive-list-date">八月 2025</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/05/"><span class="card-archive-list-date">五月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/04/"><span class="card-archive-list-date">四月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/03/"><span class="card-archive-list-date">三月 2025</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/02/"><span class="card-archive-list-date">二月 2025</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2025/01/"><span class="card-archive-list-date">一月 2025</span><span class="card-archive-list-count">4</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/12/"><span class="card-archive-list-date">十二月 2024</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/10/"><span class="card-archive-list-date">十月 2024</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">44</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">89.8k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-08-13T13:08:18.777Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer" style="background: lightgray"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2025 By RainyDoor</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Hi, welcome to my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script>function panguFn () {
   if (typeof pangu === 'object') pangu.autoSpacingPage()
   else {
     getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
